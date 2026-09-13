@@ -1,9 +1,10 @@
 {
-  "purpose": "local_reproducibility_handoff",
+  "purpose": "public_repository_reproducibility_handoff",
   "raw_data_included": false,
   "models_included": false,
-  "public_repository": null,
-  "redistribution_permission": "not established; this local bundle is not a public release",
+  "public_repository": "https://github.com/kagurarnea/-",
+  "repository_data_scope": "competition data and model objects are tracked in the repository but excluded from this compact ZIP",
+  "redistribution_permission": "repository owner authorized public inclusion; original competition-data rights and platform terms remain applicable",
   "python": "3.13.9",
   "platform": "Windows-11-10.0.26200-SP0",
   "versions": {
@@ -61,7 +62,7 @@
     "review\\benchmark_inference.py": "a20ff4b7273b96ff06453251328024d4adac09884f363a24aa7b1c7f088bdd73",
     "review\\build_response.py": "d994ad83435b065235ec2d261b0f5bcba3711b7e0ca8e3a1897251bf526a620a",
     "review\\fetch_public_sources.py": "1f08084efb03da5728b367d6403206b9deafff4e12cb77c3874d68c46b0eaa96",
-    "review\\package_reproducibility.py": "5d6171a834e7a70250c54dc805de567cd8e9cfc01ef5966782752ff98f081204",
+    "review\\package_reproducibility.py": "69e561d4f93bd36cd6858a030d33515a4d0e12de5c3d9ebc3b8354dd5e050e92",
     "review\\plot_audit.py": "0e886d4417533fc95eed61f76debb1517cb35422dcd9a276e1d2024cdc0c9fd8",
     "review\\plot_branch_selection.py": "44c7d851e224382716877ee4cd8657cdadb1aa2f2ca303ab84bee1770a169579",
     "review\\plot_review_validation.py": "acc4df18f736cc7da0c845cdeb8fae814e515609cd8fae8467b17af6bbd2fd77",

@@ -1,66 +1,98 @@
-# TFT-LCD质量特性预测方法比较
+# TFT-LCD Quality Characteristic Prediction
 
-本项目使用机器学习研究TFT-LCD多工序生产记录与连续质量特性Y之间的预测关系，提供训练代码、竞赛数据、模型、实验结果、可视化与论文。
+本项目面向TFT-LCD多工序制造数据，使用机器学习预测连续质量特性Y。仓库公开保存可执行代码、竞赛数据、训练模型、逐样本实验结果、可视化和论文，便于核对从数据审计到预测文件生成的完整过程。
 
-当前研究采用折内预处理、四种特征表示与八候选嵌套选择，并进行算法对照、消融、预算敏感性、配对关联组推断和逐样本诊断。研究定位为匿名完整记录上的离线回顾性比较。
+项目地址：[github.com/kagurarnea/-](https://github.com/kagurarnea/-)
 
-## 项目入口
+## 研究方案
 
-- [方案与主要结果](innovative_solution/README.md)
-- [完整实验报告](innovative_solution/outputs/REPORT.md)
-- [安装及复现说明](innovative_solution/REPRODUCE.md)
-- [研究决策与修改过程](innovative_solution/PROJECT_PROCESS.md)
-- [论文正文](innovative_solution/thesis/论文正文.md)
-- [Word论文](innovative_solution/thesis/基于机器学习的TFT-LCD多工序质量特性预测研究.docx)
+训练集包含800条记录和5952个输入字段，测试A、B分别包含300条和412条记录。当前流程在每个训练折内独立完成结构筛选、设备条件填充、缺失指示、类别编码和监督特征选择，并比较以下四种输入表示：
+
+- 基础特征；
+- 基础特征加工序统计；
+- 基础特征加时间代理；
+- 同时包含工序统计与时间代理的组合特征。
+
+四种表示分别与XGBoost树深2、3组合，形成八个候选配置。内层窗口负责选参，外层窗口评价选择流程；开发、区间校准和尾段评价使用分离的数据范围。项目还包含七类回归算法对照、特征消融、统一候选预算比较、关联组重采样、区间覆盖和逐样本残差诊断。
+
+## 主要结果
+
+| 方法或配置 | 外层MSE |
+|---|---:|
+| 基础特征 深度2 | 0.024533 |
+| 基础加工序统计 深度2 | 0.024291 |
+| 基础加时间特征 深度2 | 0.022162 |
+| 组合特征 深度2 | 0.023679 |
+| 八候选嵌套选择 | 0.023242 |
+
+开发段内层选择 `process_d3`。该配置的冻结尾段MSE为0.044408，使用全部训练记录拟合后的A集回顾性MSE为0.032528。不同窗口中的候选排名存在变化，因此仓库分别报告固定配置、选参流程和最终开发配置，不将单一分数称为全局最优结果。
+
+完整数字、口径和图表见[实验报告](innovative_solution/outputs/REPORT.md)。
 
 ## 快速开始
 
-建议使用Python 3.13，在仓库根目录执行：
+建议使用Python 3.13。在仓库根目录执行：
 
 ```bash
 python -m venv .venv
-# Windows PowerShell: .venv\Scripts\Activate.ps1
-# Linux/macOS: source .venv/bin/activate
+```
+
+激活环境后安装依赖：
+
+```bash
 python -m pip install -r innovative_solution/requirements-research.txt
+```
+
+根据已保存的逐样本结果刷新报告和图表：
+
+```bash
 python -m innovative_solution.report_only
 ```
 
-上述命令使用保存的实验记录刷新报告与图表。重新训练当前方案：
+重新运行当前八候选流程：
 
 ```bash
 python -m innovative_solution.run
 ```
 
-从头运行所有比较及论文构建的完整顺序见复现说明。训练与推理模型为本项目生成的joblib文件；环境版本记录在依赖清单与运行结果中。
+从数据审计开始复现四候选参照、补充实验和当前方案的完整顺序见[复现说明](innovative_solution/REPRODUCE.md)。
 
-## 数据与输出
+## 目录
 
-data目录包含训练集、测试A、测试B和A答案，由项目所有者授权一并上传至本私有仓库。训练集800条、A集300条、B集412条，输入5952个字段。
+```text
+.
+|-- data/                         竞赛数据及探索阶段结果
+|-- innovative_solution/         当前研究代码
+|   |-- outputs/                 指标、预测、模型和可视化
+|   |-- review/                  数据与引用核验资料
+|   |-- tests/                   自动化检查
+|   |-- thesis/                  论文来源、生成脚本和Word论文
+|   |-- README.md                方案与结果说明
+|   `-- REPRODUCE.md             完整复现步骤
+|-- .gitignore                   版本控制排除规则
+|-- LICENSE                      源码与项目文档许可证
+`-- README.md                    仓库入口
+```
 
-当前预测文件位于innovative_solution/outputs/branch_selection/：
+## 论文与结果文件
 
-- submission_A.csv：A集预测，300行。
-- submission_B.csv：加入公开A标签训练的B研究场景预测，412行。
-- submission_B_train_only.csv：仅使用训练集标签的B预测，412行。
+- [论文正文](innovative_solution/thesis/论文正文.md)
+- [Word论文](innovative_solution/thesis/基于机器学习的TFT-LCD多工序质量特性预测研究.docx)
+- [研究方案说明](innovative_solution/README.md)
+- [实验复现说明](innovative_solution/REPRODUCE.md)
+- [研究决策记录](innovative_solution/PROJECT_PROCESS.md)
+- [A集预测](innovative_solution/outputs/branch_selection/submission_A.csv)
+- [B集预测](innovative_solution/outputs/branch_selection/submission_B.csv)
+- [仅训练集标签拟合的B集预测](innovative_solution/outputs/branch_selection/submission_B_train_only.csv)
 
-三个文件均为两列无表头CSV，第一列保留测试ID及行序，第二列为预测Y。该仓库上传不涉及向竞赛平台提交结果，也不改变数据的原有权利归属。
+A/B预测文件均为两列无表头CSV，第一列保留测试文件ID及行序，第二列为预测Y。格式核验记录位于 `innovative_solution/outputs/branch_selection/submission_format_check.json`。
 
-## 主要实验结果
+## 数据说明
 
-| 比较或配置 | 外层MSE |
-|---|---:|
-| 基础特征 深度2 | 0.024533 |
-| 基础加时间 深度2 | 0.022162 |
-| 组合特征 深度2 | 0.023679 |
-| 八候选嵌套选择 | 0.023242 |
+`data/`包含本研究使用的训练集、测试A、测试B和A答案。项目所有者授权将这些竞赛文件随本仓库公开，以支持结果复核。数据来源于阿里云天池智能制造质量预测赛题；公开仓库不改变比赛平台、数据提供方或其他权利人的原有权利。使用者仍需遵守适用的比赛规则和数据条款。
 
-开发段按内层分数选中process_d3；其尾段MSE为0.044408，A集回顾性MSE为0.032528。所有比较的样本范围、选择规则和实际结果见实验报告。
+输入字段、目标Y和时间字段均为匿名信息。现有结果适用于完整记录条件下的离线回顾性质量特性估计，不代表已经完成生产现场的输入可用时点验证或在线预警验证。
 
-## 文件组织
+## License
 
-- innovative_solution/：当前研究的代码、依赖、测试、说明与论文。
-- innovative_solution/outputs/：逐记录预测、统计、图表及可复用模型。
-- data/：竞赛数据和过程分析产物。
-- 仓库根目录其他Python脚本：项目探索与对比实验代码。
-
-依赖安装目录、缓存、临时材料和论文排版检查图片不纳入版本控制。运行时会按需生成缓存。输入字段与Y的物理语义、采集时点尚未核实，结果不代表已验证的在线提前预警能力。
+仓库中的原创源码与项目文档采用[MIT License](LICENSE)。该许可证不重新授权 `data/` 中的竞赛数据，也不改变论文引用资料及第三方内容的原有权利，具体见[数据说明](DATA_NOTICE.md)。

@@ -1,20 +1,30 @@
-# Local Python environments and generated caches
+# Python bytecode, environments, and generated caches
 __pycache__/
 *.py[cod]
 .cache/
 .research_deps/
 .venv/
 venv/
+env/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
 
-# Local credentials and application state
+# Local credentials and editor/application state
 .env
 .env.*
 !.env.example
 .codex/
 .agents/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
 
 # Temporary material and document layout checks
 /tmp/

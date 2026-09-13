@@ -47,8 +47,10 @@ def main():
     input_manifest=json.loads((BASE/'review_manifest.json').read_text(encoding='utf-8'))
     sources=list(PACKAGE.glob('*.py'))+list((PACKAGE/'tests').glob('*.py'))+list((PACKAGE/'review').glob('*.py'))+list((PACKAGE/'thesis').glob('*.py'))
     environment={n:importlib.metadata.version(n) for n in ['numpy','pandas','scipy','matplotlib','scikit-learn','xgboost','lightgbm','catboost','joblib','openpyxl']}
-    record={'purpose':'local_reproducibility_handoff','raw_data_included':False,'models_included':False,'public_repository':None,
-        'redistribution_permission':'not established; this local bundle is not a public release',
+    record={'purpose':'public_repository_reproducibility_handoff','raw_data_included':False,'models_included':False,
+        'public_repository':'https://github.com/kagurarnea/-',
+        'repository_data_scope':'competition data and model objects are tracked in the repository but excluded from this compact ZIP',
+        'redistribution_permission':'repository owner authorized public inclusion; original competition-data rights and platform terms remain applicable',
         'python':platform.python_version(),'platform':platform.platform(),'versions':environment,
         'input_sha256':input_manifest['input_sha256'],'protocol_sha256':sha(OUT/'protocol.json'),
         'source_sha256':{str(p.relative_to(PACKAGE)):sha(p) for p in sources},'validation_checks':checks,
