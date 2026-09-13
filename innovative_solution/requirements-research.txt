@@ -1,0 +1,14 @@
+numpy==2.3.5
+pandas==2.3.3
+scikit-learn==1.7.2
+xgboost==3.4.0
+lightgbm==4.7.0
+catboost==1.2.10
+joblib==1.5.2
+scipy==1.16.3
+matplotlib==3.10.6
+openpyxl==3.1.5
+python-docx>=1.2
+lxml>=5
+pypdf>=5
+graphviz==0.21

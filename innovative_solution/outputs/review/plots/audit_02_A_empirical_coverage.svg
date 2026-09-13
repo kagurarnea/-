@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="751.151875pt" height="386.707756pt" viewBox="0 0 751.151875 386.707756" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-13T06:04:19.681844</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 386.707756 
+L 751.151875 386.707756 
+L 751.151875 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 46.271875 293.472 
+L 345.822226 293.472 
+L 345.822226 75.744 
+L 46.271875 75.744 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mdec6420412" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mdec6420412" x="108.76548" y="293.472" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="108.76548" y="308.46575" transform="rotate(-0 108.76548 308.46575)">A 集实测覆盖</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mdec6420412" x="283.328622" y="293.472" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="283.328622" y="308.46575" transform="rotate(-0 283.328622 308.46575)">名义覆盖</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_3">
+      <path d="M 46.271875 293.472 
+L 345.822226 293.472 
+" clip-path="url(#pd9410f0c8e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.17; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <defs>
+       <path id="m3ca0f790ab" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m3ca0f790ab" x="46.271875" y="293.472" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="39.271875" y="297.468875" transform="rotate(-0 39.271875 297.468875)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5">
+      <path d="M 46.271875 252.775178 
+L 345.822226 252.775178 
+" clip-path="url(#pd9410f0c8e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.17; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m3ca0f790ab" x="46.271875" y="252.775178" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="39.271875" y="256.772053" transform="rotate(-0 39.271875 256.772053)">20</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7">
+      <path d="M 46.271875 212.078355 
+L 345.822226 212.078355 
+" clip-path="url(#pd9410f0c8e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.17; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m3ca0f790ab" x="46.271875" y="212.078355" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="39.271875" y="216.07523" transform="rotate(-0 39.271875 216.07523)">40</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_9">
+      <path d="M 46.271875 171.381533 
+L 345.822226 171.381533 
+" clip-path="url(#pd9410f0c8e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.17; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m3ca0f790ab" x="46.271875" y="171.381533" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="39.271875" y="175.378408" transform="rotate(-0 39.271875 175.378408)">60</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_11">
+      <path d="M 46.271875 130.68471 
+L 345.822226 130.68471 
+" clip-path="url(#pd9410f0c8e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.17; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m3ca0f790ab" x="46.271875" y="130.68471" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="39.271875" y="134.681585" transform="rotate(-0 39.271875 134.681585)">80</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_13">
+      <path d="M 46.271875 89.987888 
+L 345.822226 89.987888 
+" clip-path="url(#pd9410f0c8e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.17; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m3ca0f790ab" x="46.271875" y="89.987888" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="39.271875" y="93.984763" transform="rotate(-0 39.271875 93.984763)">100</text>
+     </g>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="15.19375" y="184.608" transform="rotate(-90 15.19375 184.608)">覆盖率（%）</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 59.8878 293.472 
+L 157.643159 293.472 
+L 157.643159 119.832224 
+L 59.8878 119.832224 
+z
+" clip-path="url(#pd9410f0c8e)" style="fill: #178277"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 234.450942 293.472 
+L 332.206301 293.472 
+L 332.206301 110.336299 
+L 234.450942 110.336299 
+z
+" clip-path="url(#pd9410f0c8e)" style="fill: #b7c2cb"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 46.271875 293.472 
+L 46.271875 75.744 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 46.271875 293.472 
+L 345.822226 293.472 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(89.646964 97.103792)">85.33%</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(79.936886 113.028011)">256/300 条</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(264.210106 87.607867)">90.00%</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(261.328622 103.532086)">目标水平</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="46.271875" y="57.744" transform="rotate(-0 46.271875 57.744)">（a）回顾性评价的实际覆盖率</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="line2d_15">
+    <path d="M 471.633374 112.75776 
+L 743.951875 112.75776 
+" clip-path="url(#p155219532d)" style="fill: none; stroke: #e1e6ea; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_16">
+    <path d="M 471.633374 149.77152 
+L 743.951875 149.77152 
+" clip-path="url(#p155219532d)" style="fill: none; stroke: #e1e6ea; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_17">
+    <path d="M 471.633374 186.78528 
+L 743.951875 186.78528 
+" clip-path="url(#p155219532d)" style="fill: none; stroke: #e1e6ea; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_18">
+    <path d="M 471.633374 223.79904 
+L 743.951875 223.79904 
+" clip-path="url(#p155219532d)" style="fill: none; stroke: #e1e6ea; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_19">
+    <path d="M 471.633374 260.8128 
+L 743.951875 260.8128 
+" clip-path="url(#p155219532d)" style="fill: none; stroke: #e1e6ea; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #66727d" x="471.633374" y="98.093426" transform="rotate(-0 471.633374 98.093426)">评价样本数</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: end; fill: #263746" x="743.951875" y="98.368817" transform="rotate(-0 743.951875 98.368817)">300 条</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #66727d" x="471.633374" y="135.107186" transform="rotate(-0 471.633374 135.107186)">被区间覆盖</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: end; fill: #263746" x="743.951875" y="135.382577" transform="rotate(-0 743.951875 135.382577)">256 条</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #66727d" x="471.633374" y="172.120946" transform="rotate(-0 471.633374 172.120946)">未被区间覆盖</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: end; fill: #263746" x="743.951875" y="172.396337" transform="rotate(-0 743.951875 172.396337)">44 条</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #66727d" x="471.633374" y="209.134706" transform="rotate(-0 471.633374 209.134706)">低于名义水平</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: end; fill: #263746" x="743.951875" y="209.410097" transform="rotate(-0 743.951875 209.410097)">4.67 个百分点</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #66727d" x="471.633374" y="246.148466" transform="rotate(-0 471.633374 246.148466)">平均区间宽度</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: end; fill: #263746" x="743.951875" y="246.423857" transform="rotate(-0 743.951875 246.423857)">0.485286（Y 的数值尺度）</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="471.633374" y="57.744" transform="rotate(-0 471.633374 57.744)">（b）样本与区间统计</text>
+   </g>
+  </g>
+  <g id="text_24">
+   <text style="font-size: 16px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="366.383875" y="19.99" transform="rotate(-0 366.383875 19.99)">当前 A 集经验区间覆盖低于名义水平</text>
+  </g>
+  <g id="text_25">
+   <text style="font-size: 9.5px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #283541" x="46.271875" y="335.808" transform="rotate(-0 46.271875 335.808)">该区间由开发回测残差分位数构造；A 数据曾在研究过程中被查看，结果属于回顾性评价。</text>
+  </g>
+  <g id="text_26">
+   <text style="font-size: 9px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #66727d" x="46.271875" y="360" transform="rotate(-0 46.271875 360)">未建立独立校准与样本交换性条件，因此本图不表示对未知数据的 90% 理论覆盖保证。</text>
+  </g>
+  <g id="text_27">
+   <text style="font-size: 8.5px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #66727d" x="46.271875" y="377.3376" transform="rotate(-0 46.271875 377.3376)">依据：interval_coverage.csv；预测区间仅作经验诊断，不作为自动放行产品的依据。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd9410f0c8e">
+   <rect x="46.271875" y="75.744" width="299.550351" height="217.728"/>
+  </clipPath>
+  <clipPath id="p155219532d">
+   <rect x="471.633374" y="75.744" width="272.318501" height="217.728"/>
+  </clipPath>
+ </defs>
+</svg>

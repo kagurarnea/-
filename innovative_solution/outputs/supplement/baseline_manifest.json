@@ -1,0 +1,73 @@
+{
+  "elapsed_sec": 669.1494238000014,
+  "grid": {
+    "Ridge": [
+      {
+        "alpha": 10
+      },
+      {
+        "alpha": 100
+      },
+      {
+        "alpha": 1000
+      }
+    ],
+    "RandomForest": [
+      {
+        "min_samples_leaf": 2
+      },
+      {
+        "min_samples_leaf": 5
+      }
+    ],
+    "GBR": [
+      {
+        "max_depth": 2
+      },
+      {
+        "max_depth": 3
+      }
+    ],
+    "SVR": [
+      {
+        "C": 1
+      },
+      {
+        "C": 10
+      }
+    ],
+    "LightGBM": [
+      {
+        "num_leaves": 7
+      },
+      {
+        "num_leaves": 15
+      }
+    ],
+    "CatBoost": [
+      {
+        "depth": 4
+      },
+      {
+        "depth": 6
+      }
+    ],
+    "XGBoost": [
+      {
+        "max_depth": 2
+      },
+      {
+        "max_depth": 3
+      }
+    ]
+  },
+  "final_members": 3,
+  "inner_seed": 42,
+  "versions": {
+    "scikit-learn": "1.7.2",
+    "xgboost": "3.4.0",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10"
+  },
+  "script_sha256": "4490b47a2808fa2c61572c74e93380bb7ef121f0156affeffbb11c780b8ecbe0"
+}

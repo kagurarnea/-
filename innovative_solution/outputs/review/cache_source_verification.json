@@ -1,0 +1,76 @@
+{
+  "verification": "direct source Excel versus existing pickle cache; caches and models not modified",
+  "comparison_numeric_tolerance": "exact equality; no floating point tolerance was needed or applied",
+  "all_sources_and_caches_match": true,
+  "datasets": [
+    {
+      "dataset": "训练集",
+      "source_path": "C:\\Users\\lenovo\\Downloads\\my method\\data\\训练集.xlsx",
+      "cache_path": "C:\\Users\\lenovo\\Downloads\\my method\\innovative_solution\\.cache\\训练集.pkl",
+      "source_sha256": "4db8b211a7d2c93eedaa2251d54e2d7055276fb2021b3c3a743b5b0f6686c613",
+      "cache_sha256": "1832208d3fb2e7ef24c1ed1531eb117d11aac0cf4bb4c8cff36c36abb1015204",
+      "source_matches_training_manifest_sha256": true,
+      "source_shape": [
+        800,
+        5954
+      ],
+      "cache_shape": [
+        800,
+        5954
+      ],
+      "row_index_equal": true,
+      "column_names_and_order_equal": true,
+      "all_cell_values_exactly_equal": true,
+      "comparison_settings": "assert_frame_equal(check_dtype=False, check_exact=True, check_index_type=False, check_column_type=False)",
+      "comparison_error": null,
+      "source_unchanged_during_read": true,
+      "cache_unchanged_during_read": true
+    },
+    {
+      "dataset": "测试集A",
+      "source_path": "C:\\Users\\lenovo\\Downloads\\my method\\data\\测试集A.xlsx",
+      "cache_path": "C:\\Users\\lenovo\\Downloads\\my method\\innovative_solution\\.cache\\测试集A.pkl",
+      "source_sha256": "f9d98dc51361b8be6ad1699a8adb85c1ef412113db708082da33bee8b8269fcf",
+      "cache_sha256": "2dda1924de0a5a027647d66487a041456b57ad3277953ed09d4bfc4a9785df9a",
+      "source_matches_training_manifest_sha256": true,
+      "source_shape": [
+        300,
+        5953
+      ],
+      "cache_shape": [
+        300,
+        5953
+      ],
+      "row_index_equal": true,
+      "column_names_and_order_equal": true,
+      "all_cell_values_exactly_equal": true,
+      "comparison_settings": "assert_frame_equal(check_dtype=False, check_exact=True, check_index_type=False, check_column_type=False)",
+      "comparison_error": null,
+      "source_unchanged_during_read": true,
+      "cache_unchanged_during_read": true
+    },
+    {
+      "dataset": "测试集B",
+      "source_path": "C:\\Users\\lenovo\\Downloads\\my method\\data\\测试集B.xlsx",
+      "cache_path": "C:\\Users\\lenovo\\Downloads\\my method\\innovative_solution\\.cache\\测试集B.pkl",
+      "source_sha256": "97a217b84f51b2434e8f0bf628614460c842a283b3686f31265b547f9e53623b",
+      "cache_sha256": "19f44eede91ac6ecd685a3c0e5f55055fdf5e21ff2e4767b5b82a689f4cd9f20",
+      "source_matches_training_manifest_sha256": true,
+      "source_shape": [
+        412,
+        5953
+      ],
+      "cache_shape": [
+        412,
+        5953
+      ],
+      "row_index_equal": true,
+      "column_names_and_order_equal": true,
+      "all_cell_values_exactly_equal": true,
+      "comparison_settings": "assert_frame_equal(check_dtype=False, check_exact=True, check_index_type=False, check_column_type=False)",
+      "comparison_error": null,
+      "source_unchanged_during_read": true,
+      "cache_unchanged_during_read": true
+    }
+  ]
+}

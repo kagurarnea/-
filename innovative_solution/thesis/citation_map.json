@@ -1,0 +1,121 @@
+[
+  {
+    "number": 1,
+    "key": "kusiak",
+    "original_id": 3,
+    "text": "Andrew Kusiak. Smart manufacturing[J]. International Journal of Production Research, 2018, 56(1-2): 508-517. DOI: 10.1080/00207543.2017.1351644.",
+    "verification": "Crossref metadata"
+  },
+  {
+    "number": 2,
+    "key": "competition",
+    "original_id": 2,
+    "text": "阿里云天池. 智能制造质量预测赛题[EB/OL]. https://tianchi.aliyun.com/competition/entrance/231633/introduction.",
+    "verification": "user-provided competition text available; live page body not verified"
+  },
+  {
+    "number": 3,
+    "key": "qu",
+    "original_id": 1,
+    "text": "屈方磊. 基于集成学习的智能制造质量预测研究[D]. 中北大学, 2024.",
+    "verification": "cover and relevant full pages inspected"
+  },
+  {
+    "number": 4,
+    "key": "friedman",
+    "original_id": 7,
+    "text": "Jerome H. Friedman. Greedy function approximation: A gradient boosting machine[J]. The Annals of Statistics, 2001, 29(5): 1189-1232. DOI: 10.1214/aos/1013203451.",
+    "verification": "Crossref metadata and Project Euclid publisher metadata and abstract"
+  },
+  {
+    "number": 5,
+    "key": "xgboost",
+    "original_id": 10,
+    "text": "Tianqi Chen, Carlos Guestrin. XGBoost: A scalable tree boosting system[C]//Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. 2016: 785-794. DOI: 10.1145/2939672.2939785.",
+    "verification": "Crossref metadata; registered main title is XGBoost"
+  },
+  {
+    "number": 6,
+    "key": "rf",
+    "original_id": 8,
+    "text": "Leo Breiman. Random Forests[J]. Machine Learning, 2001, 45(1): 5-32. DOI: 10.1023/A:1010933404324.",
+    "verification": "Crossref metadata"
+  },
+  {
+    "number": 7,
+    "key": "et",
+    "original_id": 9,
+    "text": "Pierre Geurts, Damien Ernst, Louis Wehenkel. Extremely randomized trees[J]. Machine Learning, 2006, 63(1): 3-42. DOI: 10.1007/s10994-006-6226-1.",
+    "verification": "Crossref metadata"
+  },
+  {
+    "number": 8,
+    "key": "lightgbm",
+    "original_id": 22,
+    "text": "Guolin Ke, Qi Meng, Thomas Finley, et al. LightGBM: A Highly Efficient Gradient Boosting Decision Tree[C]//Advances in Neural Information Processing Systems 30. 2017. https://proceedings.neurips.cc/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html.",
+    "verification": "NeurIPS publisher title authors and abstract inspected"
+  },
+  {
+    "number": 9,
+    "key": "catboost",
+    "original_id": 23,
+    "text": "Liudmila Prokhorenkova, Gleb Gusev, Aleksandr Vorobev, et al. CatBoost: unbiased boosting with categorical features[C]//Advances in Neural Information Processing Systems 31. 2018. https://proceedings.neurips.cc/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html.",
+    "verification": "NeurIPS publisher title authors and abstract inspected"
+  },
+  {
+    "number": 10,
+    "key": "stacking",
+    "original_id": 12,
+    "text": "David H. Wolpert. Stacked generalization[J]. Neural Networks, 1992, 5(2): 241-259. DOI: 10.1016/S0893-6080(05)80023-1.",
+    "verification": "Crossref metadata"
+  },
+  {
+    "number": 11,
+    "key": "ridge",
+    "original_id": 11,
+    "text": "Arthur E. Hoerl, Robert W. Kennard. Ridge Regression: Biased Estimation for Nonorthogonal Problems[J]. Technometrics, 1970, 12(1): 55-67. DOI: 10.1080/00401706.1970.10488634.",
+    "verification": "Crossref metadata"
+  },
+  {
+    "number": 12,
+    "key": "tabular",
+    "original_id": 13,
+    "text": "Léo Grinsztajn, Edouard Oyallon, Gaël Varoquaux. Why Do Tree-Based Models Still Outperform Deep Learning on Typical Tabular Data?[C]//Advances in Neural Information Processing Systems 35. 2022: 507-520. DOI: 10.52202/068431-0037.",
+    "verification": "Crossref metadata and author arXiv abstract"
+  },
+  {
+    "number": 13,
+    "key": "tabpfn",
+    "original_id": 17,
+    "text": "Noah Hollmann, Samuel Müller, Lennart Purucker, et al. Accurate predictions on small data with a tabular foundation model[J]. Nature, 2025, 637(8045): 319-326. DOI: 10.1038/s41586-024-08328-6.",
+    "verification": "Crossref metadata and publisher-deposited abstract"
+  },
+  {
+    "number": 14,
+    "key": "missing",
+    "original_id": 6,
+    "text": "Roderick J. A. Little, Donald B. Rubin. Statistical Analysis with Missing Data[M]. Wiley, 2002. DOI: 10.1002/9781119013563.",
+    "verification": "Crossref metadata"
+  },
+  {
+    "number": 15,
+    "key": "drift",
+    "original_id": 14,
+    "text": "João Gama, Indrė Žliobaitė, Albert Bifet, et al. A survey on concept drift adaptation[J]. ACM Computing Surveys, 2014, 46(4): 1-37. DOI: 10.1145/2523813.",
+    "verification": "Crossref metadata and deposited abstract"
+  },
+  {
+    "number": 16,
+    "key": "tashman",
+    "original_id": 15,
+    "text": "Leonard J. Tashman. Out-of-sample tests of forecasting accuracy: an analysis and review[J]. International Journal of Forecasting, 2000, 16(4): 437-450. DOI: 10.1016/S0169-2070(00)00065-0.",
+    "verification": "Crossref metadata"
+  },
+  {
+    "number": 17,
+    "key": "conformal",
+    "original_id": 16,
+    "text": "Anastasios N. Angelopoulos, Stephen Bates. Conformal Prediction: A Gentle Introduction[J]. Foundations and Trends in Machine Learning, 2023, 16(4): 494-591. DOI: 10.1561/2200000101.",
+    "verification": "Crossref metadata and author full text theorem 1 and section 4.5"
+  }
+]

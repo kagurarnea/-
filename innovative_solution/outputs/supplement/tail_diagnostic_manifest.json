@@ -1,0 +1,9 @@
+{
+  "elapsed_sec": 80.65951150000183,
+  "calibration80_plus_tail100_three_member_seconds": 8.540261900008772,
+  "timing_scope": "180 records,warm model+data in memory,feature transformation and predictions;not production SLA",
+  "sample_missing_rate": 0.040922869653081846,
+  "prediction_identity_max_difference": 4.440892098500626e-16,
+  "rolling_assumption": "labels observed immediately after strictly earlier time group;actual label delay unavailable",
+  "script_sha256": "55baf941eb4f0e26a7b350d488bb871746da86b12dd000374fbe6e5f41736964"
+}

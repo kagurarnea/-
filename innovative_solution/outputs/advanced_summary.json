@@ -1,0 +1,29 @@
+{
+  "row_missing_rate_max": 0.13106610622850592,
+  "rows_with_any_missing": 609,
+  "operations_with_device_dependent_missing": 0,
+  "best_transform_reducer": "pca50",
+  "best_transform_reducer_mse": 0.03870250804883854,
+  "best_ablation": "A3_process_time",
+  "best_ablation_mse": 0.02738800616340058,
+  "nested_grid_outer_mse": 0.027635582486299385,
+  "best_tree_model": "XGBoost",
+  "best_tree_model_mse": 0.02834289266808773,
+  "highest_error_sample": "NH1835",
+  "significant_residual_tests": [
+    "Shapiro-Wilk normality",
+    "D'Agostino normality",
+    "Ljung-Box autocorrelation lag=5",
+    "Ljung-Box autocorrelation lag=10"
+  ],
+  "available_reducers": [
+    "none",
+    "pca50",
+    "pca95",
+    "svd50",
+    "pls20",
+    "autoencoder16"
+  ],
+  "elapsed_sec": 100.94374930000049,
+  "new_visualizations": 12
+}

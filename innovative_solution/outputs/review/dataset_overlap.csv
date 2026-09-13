@@ -1,0 +1,3 @@
+﻿dataset,rows,rows_in_train_proxy_range,rows_after_train_proxy_max,rows_before_train_proxy_min,id_overlap_with_train
+A,300,50,0,250,0
+B,412,39,0,373,0

@@ -1,0 +1,60 @@
+{
+  "version": "feature_branch_selection_v1",
+  "interpretation": "retrospective_adaptive_candidate_expansion_not_pristine_test",
+  "outer_windows": [
+    [
+      320,
+      100
+    ],
+    [
+      420,
+      100
+    ],
+    [
+      520,
+      100
+    ]
+  ],
+  "development_end": 620,
+  "calibration_end": 700,
+  "inner_splits": 2,
+  "inner_block": 60,
+  "seeds": [
+    42,
+    143,
+    244
+  ],
+  "candidates": [
+    "raw_d2",
+    "raw_d3",
+    "process_d2",
+    "process_d3",
+    "time_d2",
+    "time_d3",
+    "full_d2",
+    "full_d3"
+  ],
+  "selection_metric": "pooled_inner_mse",
+  "n_estimators": 1200,
+  "raw_view": "selected_raw_plus_missing_plus_onehot",
+  "time_order": "median_parsed_timestamp_proxy_not_release_order",
+  "external_A": "evaluate_if_released_labels_exist_not_used_in_A_numeric_fit",
+  "B_refit": "uniform_released_A_if_available_else_original_training_only",
+  "interval": "frozen_development_model_separate_calibration_descriptive_only",
+  "outer_fixed_candidates": [
+    "raw_d2",
+    "raw_d3",
+    "process_d2",
+    "process_d3",
+    "time_d2",
+    "time_d3",
+    "full_d2",
+    "full_d3"
+  ],
+  "candidate_scope": "basic, basic+process, basic+time, combined; each depth 2/3",
+  "candidate_scope_informed_by_prior_ablation": true,
+  "independent_confirmation": false,
+  "final_selection": "pooled development-inner MSE only; never outer, calibration, tail or A score",
+  "time_view": "basic plus time__ and route__; excludes proc__",
+  "process_view": "basic plus proc__; excludes time__ and route__"
+}

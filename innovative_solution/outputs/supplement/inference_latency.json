@@ -1,0 +1,42 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+  "logical_cores": 20,
+  "scope": "resident model and input frame; all feature transformation + 3 model predictions; excludes I/O, acquisition, queuing and label delay; local snapshot, not SLA",
+  "measurements": [
+    {
+      "batch_size": 1,
+      "repeat": 1,
+      "seconds": 3.7063647999966634
+    },
+    {
+      "batch_size": 1,
+      "repeat": 2,
+      "seconds": 3.7484579000010854
+    },
+    {
+      "batch_size": 1,
+      "repeat": 3,
+      "seconds": 3.799127899997984
+    },
+    {
+      "batch_size": 100,
+      "repeat": 1,
+      "seconds": 4.001414199999999
+    },
+    {
+      "batch_size": 100,
+      "repeat": 2,
+      "seconds": 3.9714262999987113
+    },
+    {
+      "batch_size": 100,
+      "repeat": 3,
+      "seconds": 3.9955457000032766
+    }
+  ],
+  "medians": {
+    "1": 3.7484579000010854,
+    "100": 3.9955457000032766
+  }
+}

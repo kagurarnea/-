@@ -1,0 +1,48 @@
+{
+  "method": "released_A_expanding_window_domain_adaptation",
+  "a_answer_file": "测试集A_答案.csv",
+  "original_train_rows": 800,
+  "released_a_rows": 300,
+  "phase_b_training_rows": 1100,
+  "test_b_rows": 412,
+  "validation_rows": 200,
+  "backtest_folds": [
+    [
+      100,
+      50
+    ],
+    [
+      150,
+      50
+    ],
+    [
+      200,
+      100
+    ]
+  ],
+  "candidate_a_weights": [
+    1.0,
+    2.0,
+    4.0
+  ],
+  "ensemble_members": 3,
+  "selected_strategy": "train_plus_released_a_x2",
+  "selected_a_weight": 2.0,
+  "train_only_backtest_mse": 0.029489815051183088,
+  "selected_backtest_mse": 0.020915528272614642,
+  "relative_mse_improvement": 0.29075417270968806,
+  "selected_backtest_rmse": 0.14462201862999507,
+  "selected_backtest_mae": 0.11322716423504517,
+  "selected_backtest_r2": 0.6640876734826595,
+  "selected_backtest_bias": -0.011496165485474859,
+  "conformal_radius_90": 0.21507218327453614,
+  "engineered_features_per_member": [
+    727,
+    728,
+    731
+  ],
+  "b_prediction_mean": 2.763465526227426,
+  "b_prediction_std": 0.17062616698379446,
+  "mean_absolute_change_vs_train_only": 0.08155367668302704,
+  "b_labels_used": false
+}

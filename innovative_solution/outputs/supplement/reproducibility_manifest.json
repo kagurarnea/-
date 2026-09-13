@@ -1,0 +1,120 @@
+{
+  "purpose": "local_reproducibility_handoff",
+  "raw_data_included": false,
+  "models_included": false,
+  "public_repository": null,
+  "redistribution_permission": "not established; this local bundle is not a public release",
+  "python": "3.13.9",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.6",
+    "scikit-learn": "1.7.2",
+    "xgboost": "3.4.0",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10",
+    "joblib": "1.5.2",
+    "openpyxl": "3.1.5"
+  },
+  "input_sha256": {
+    "训练集.xlsx": "4db8b211a7d2c93eedaa2251d54e2d7055276fb2021b3c3a743b5b0f6686c613",
+    "测试集A.xlsx": "f9d98dc51361b8be6ad1699a8adb85c1ef412113db708082da33bee8b8269fcf",
+    "测试集B.xlsx": "97a217b84f51b2434e8f0bf628614460c842a283b3686f31265b547f9e53623b",
+    "测试集A_答案.csv": "bf1985c8598631af76baf07b15707366cdbaf6588e2d0f5145ac88f572d51235"
+  },
+  "protocol_sha256": "5d07936f775cbfed4228fefccb232dd1d0972785c4289689f8143fe7a9a4478e",
+  "source_sha256": {
+    "advanced_analysis.py": "a8acd1b8b53983241df6625ac1fe6726e353a3c1d08ac7558cdc4ee4d66f1ec1",
+    "availability_audit.py": "cc52829d3edb284c636327759d779a977322decccc10e4cddfddc617ddd66c6a",
+    "branch_diagnostics.py": "756169df3091908bc7baadb4fcc7ac82b6fc6731e6b1737fe4411e5b56b92a08",
+    "branch_report.py": "3ce1bd793f247ba3170f029dc81231717abec0e156f7a363c76018f9fdd66b53",
+    "branch_selection.py": "34bc130df377e4b6de18ccc1b89066cf6808908c2b1e954e0e8f8a6e28e20548",
+    "config.py": "b0fec1797c73777d5b258a018a4aed2cacab5ff400a714634d019a2c2e93c476",
+    "fair_algorithm_comparison.py": "e4af90b493e43360b39a54bfc381486a26f1b1ed85b0c2dd443cdf84b31c942c",
+    "inference_audit.py": "8d0e429f9a5eaca795c387b68f4b4bb7accc77b0092428a432d77fe223a9bf86",
+    "phase_a_optimization.py": "b9e7dc50aafad49a7158523040edc8c8070451725a8d8f50e7c3751137805439",
+    "phase_b_optimization.py": "11f5da4ad2c9e1f55a9acf20c74cbda72f02b312f8a50bee95af16fcb067c371",
+    "pipeline.py": "4ccc301b2744be76b1c8a4a4c039ffa93c3f6a965f81611276ae6b985423ec7f",
+    "reducers.py": "eaa5a9246e1c16fc7a14c4e621cf1d51b1a94b9bf8343481905ccd4eaa77e2cc",
+    "reporting.py": "f4759998de2418260a8f8530bfd5d3468b5db113599dee7dc3d7da167698d93a",
+    "report_only.py": "c640a88485c09cbc0d403e0e461df6a8d1b27fb07fa3d7b8abe368af25e89ef5",
+    "review_report.py": "7cb07c10ac29195749cc8cfb9d2609a42672e3d5913afd6e45188a3ebce37943",
+    "review_validation.py": "022ea11c1fb9b7c9dc164df38d0a5a8749adf3f836970dedd41b7d42b869df1b",
+    "run.py": "a3beeaedf9fa9816bb6fdb02f8daf9aee946d24f135647e58baef2c2ac40fa1c",
+    "run_supplement.py": "82fd3e118bec86fa3c5a0e7b980985a27b6620be80a9a833951e5ddbde34b19a",
+    "supplement_common.py": "82463115f626c6bfc1205c264077b1f2cc71a76369f0ef5efbeee9723fe7f0c9",
+    "supplement_models.py": "4490b47a2808fa2c61572c74e93380bb7ef121f0156affeffbb11c780b8ecbe0",
+    "supplement_protocol.py": "56e0152c248ae5c79094164bad805c4dcf9708c7b0f5ef3b99c0fdadb4849a91",
+    "supplement_report.py": "9185c22f693118efc4394bd0b23fa7386a4ca3ac1748984934579c13f5bf2251",
+    "supplement_statistics.py": "fb6e7fe6b03f55f3e063055c42770bba740e2f2661bbd0e969a6b27f73ac918d",
+    "supplement_tail.py": "55baf941eb4f0e26a7b350d488bb871746da86b12dd000374fbe6e5f41736964",
+    "workflow_description.py": "001b94ec6c1d85a682cce8afc90937120cd5d6c84e52f3a8d79d9d02df5bf5f1",
+    "__init__.py": "09bdb17d0aff2970f1718c70dc486023476fa730b7dfc0cf8b61301a5f9638f6",
+    "tests\\test_core.py": "520109c4cc02b942ce0699bc888811ff401cd010b29f3d0d9c0914eceabac5eb",
+    "tests\\test_core_review.py": "94d84813c9c598b7a1df58aae1be8dc45b2137a063bb6b93a9b4af9b97dabc85",
+    "tests\\test_reducers.py": "918a543d7ae5adf11a145d7ce12df5aa8a6e6a00e9af75ceb5883d0e0f5ecf79",
+    "tests\\test_review_validation.py": "bf5e712bf46ab91cec6d69d69fca306e892547aed8d1ec275a6afcbb965f8762",
+    "tests\\test_supplement.py": "166637c32cc029631469900af89343c6219f905af1389d2beee418b051bf9431",
+    "tests\\__init__.py": "5231b377ba4a44db65d8837eba0a4eb1fd3d579f6cf42cc9bcc991d938f0e82d",
+    "review\\benchmark_inference.py": "a20ff4b7273b96ff06453251328024d4adac09884f363a24aa7b1c7f088bdd73",
+    "review\\build_response.py": "d994ad83435b065235ec2d261b0f5bcba3711b7e0ca8e3a1897251bf526a620a",
+    "review\\fetch_public_sources.py": "1f08084efb03da5728b367d6403206b9deafff4e12cb77c3874d68c46b0eaa96",
+    "review\\package_reproducibility.py": "5d6171a834e7a70250c54dc805de567cd8e9cfc01ef5966782752ff98f081204",
+    "review\\plot_audit.py": "0e886d4417533fc95eed61f76debb1517cb35422dcd9a276e1d2024cdc0c9fd8",
+    "review\\plot_branch_selection.py": "44c7d851e224382716877ee4cd8657cdadb1aa2f2ca303ab84bee1770a169579",
+    "review\\plot_review_validation.py": "acc4df18f736cc7da0c845cdeb8fae814e515609cd8fae8467b17af6bbd2fd77",
+    "review\\plot_supplement.py": "136e100f79ab4eb59297ef77d2e832e8bec70ba342f7e82d293d35cb7f06e801",
+    "review\\statistical_audit.py": "d4b695ab7bff0fb71713b0cfc4cc774961298315295952e6927d7d1032ef27f3",
+    "review\\verify_cache_source.py": "da58b9848f07df899739792a70ea3ccfb67f93eda50853a7348cd97446a66a1b",
+    "thesis\\branch_content.py": "a0cbb690209251f1f74612791b9ac95b363916863c2e9027bc2f4cc64e03f10b",
+    "thesis\\build_revised_thesis.py": "0ac1a3a61aac38eb7f287a41775453a65ea1997d91890f1a68a3437e310e93d2",
+    "thesis\\build_thesis.py": "1349ca943188f85b24b5e7d3285ba4c93ac8d0b02cf969fd1ebe8b4aaf7fa660",
+    "thesis\\plot_workflow.py": "2cc86fb6f0ee4347c06a098ba3d958cdba0f97409ac0ea0aac23bf809e1cc4cf",
+    "thesis\\supplement_content.py": "b9152a275b0ede9da97ef24d0203747ef236c3cbf10d8919588f9b984f2fcf5a",
+    "thesis\\verify_revised_thesis.py": "f6580e5115cd23c93c64243b6931ae47cfaf3e4103412e1ed19794f22658c066"
+  },
+  "validation_checks": {
+    "baseline_predictions.csv": {
+      "models_and_scopes": 8,
+      "all_evaluation_records_match": true,
+      "finite_predictions": true
+    },
+    "feature_experiment_predictions.csv": {
+      "models_and_scopes": 24,
+      "all_evaluation_records_match": true,
+      "finite_predictions": true
+    },
+    "reference_reproduction": {
+      "max_prediction_difference": 2.930603026918277e-07,
+      "note": "float32 versus float64 ensemble averaging; same features and members"
+    },
+    "eight_candidate": {
+      "models": 10,
+      "rows_per_model": 300,
+      "actual_and_record_identity": "passed"
+    },
+    "equal_budget": {
+      "models": 7,
+      "rows_per_model": 300,
+      "actual_and_record_identity": "passed"
+    },
+    "inference_family": {
+      "unique_hypotheses": 11,
+      "holm_recalculation": "passed"
+    },
+    "availability": {
+      "inventoried": 5952,
+      "verified_before_Y": 0
+    }
+  },
+  "tests": "28 tests passed, including time/process routing, eight-candidate selection and evaluation-label isolation",
+  "execution_notes": [
+    "LightGBM JSON-punctuation field names mapped to ordered feature_i names without changing values.",
+    "Default supplementary features were checked exactly against the primary builder; unnecessary mean arithmetic was removed before the final full experiment run.",
+    "Final A/B configuration is selected by development-inner scores among eight candidates; expanded scope informed by retrospective ablation, not independent confirmation.",
+    "Thirteen shared train/validation splits match the restricted experiment; one additional calibration-vs-tail audit row records the same boundary.",
+    "Eleven distinct comparisons form the reported Holm family; all confidence intervals remain conditional on existing predictions."
+  ]
+}

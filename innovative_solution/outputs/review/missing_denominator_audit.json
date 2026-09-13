@@ -1,0 +1,47 @@
+{
+  "source_sha256": "4db8b211a7d2c93eedaa2251d54e2d7055276fb2021b3c3a743b5b0f6686c613",
+  "read_from": "C:\\Users\\lenovo\\Downloads\\my method\\innovative_solution\\.cache\\训练集.pkl",
+  "cache_sha256": "1832208d3fb2e7ef24c1ed1531eb117d11aac0cf4bb4c8cff36c36abb1015204",
+  "definition": "pandas isna; raw X excludes ID and Y; cleaned view reproduces archived kept_numeric columns",
+  "views": [
+    {
+      "view": "raw_all_X_excluding_ID_and_Y",
+      "sample_count": 800,
+      "feature_denominator": 5952,
+      "rows_with_at_least_one_missing": 800,
+      "fraction_rows_with_at_least_one_missing": 1.0,
+      "all_empty_feature_count": 227,
+      "total_missing_cells": 213525,
+      "total_cells": 4761600,
+      "overall_missing_cell_rate": 0.04484311995967742,
+      "maximum_row_missing_count": 769,
+      "maximum_row_missing_rate": 0.1292002688172043,
+      "maximum_row_source_indices_zero_based": [
+        420
+      ],
+      "maximum_row_IDs": [
+        "NH1463"
+      ]
+    },
+    {
+      "view": "archived_cleaned_kept_numeric",
+      "sample_count": 800,
+      "feature_denominator": 2617,
+      "rows_with_at_least_one_missing": 609,
+      "fraction_rows_with_at_least_one_missing": 0.76125,
+      "all_empty_feature_count": 0,
+      "total_missing_cells": 17461,
+      "total_cells": 2093600,
+      "overall_missing_cell_rate": 0.008340179594956056,
+      "maximum_row_missing_count": 343,
+      "maximum_row_missing_rate": 0.13106610622850592,
+      "maximum_row_source_indices_zero_based": [
+        420
+      ],
+      "maximum_row_IDs": [
+        "NH1463"
+      ]
+    }
+  ],
+  "interpretation": "Raw and structurally cleaned missingness use different feature denominators. Do not attribute cleaned-view 609/800 to all raw fields."
+}

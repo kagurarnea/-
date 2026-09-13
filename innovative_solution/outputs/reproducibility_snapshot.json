@@ -1,0 +1,59 @@
+{
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "C:\\Users\\lenovo\\anaconda3\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "random_state": 42,
+  "config": {
+    "data_dir": "C:\\Users\\lenovo\\Downloads\\my method\\data",
+    "output_dir": "C:\\Users\\lenovo\\Downloads\\my method\\innovative_solution\\outputs",
+    "cache_dir": "C:\\Users\\lenovo\\Downloads\\my method\\innovative_solution\\.cache",
+    "train_file": "训练集.xlsx",
+    "test_a_file": "测试集A.xlsx",
+    "test_b_file": "测试集B.xlsx",
+    "random_state": 42,
+    "n_splits": 5,
+    "rolling_n_splits": 4,
+    "temporal_holdout_fraction": 0.2,
+    "top_k_raw_features": 320,
+    "feature_view": "full",
+    "missing_indicator_threshold": 0.005,
+    "conformal_alpha": 0.1,
+    "n_bootstrap": 3000,
+    "selector_estimators": 250,
+    "extra_trees_estimators": 400,
+    "xgb_estimators": 1200,
+    "mlp_members": 3,
+    "ridge_alphas": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0
+    ]
+  },
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.6",
+    "statsmodels": "0.14.5",
+    "xgboost": "3.4.0",
+    "openpyxl": "3.1.5"
+  },
+  "input_files": {
+    "训练集.xlsx": {
+      "bytes": 24847032,
+      "sha256": "4db8b211a7d2c93eedaa2251d54e2d7055276fb2021b3c3a743b5b0f6686c613"
+    },
+    "测试集A.xlsx": {
+      "bytes": 8912293,
+      "sha256": "f9d98dc51361b8be6ad1699a8adb85c1ef412113db708082da33bee8b8269fcf"
+    },
+    "测试集B.xlsx": {
+      "bytes": 12736898,
+      "sha256": "97a217b84f51b2434e8f0bf628614460c842a283b3686f31265b547f9e53623b"
+    }
+  }
+}

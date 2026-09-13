@@ -1,0 +1,45 @@
+{
+  "kind": "source_revision_after_completed_validation",
+  "executed_protocol_version": "review_v2",
+  "current_protocol_version": "review_v2_1",
+  "training_rerun_performed": false,
+  "execution_manifest_preserved": true,
+  "preserved_manifest": "review_manifest.json",
+  "preserved_manifest_sha256": "a313c1f49d48204d4c357baad60d4f265feb16f6d7c0afa97216184f90a56e8f",
+  "executed_source_archive": "archive/review_validation_executed.py",
+  "executed_source_sha256": "8101c1905d6983898ca7d05ee94064b261d16c124d13ebf5e18a72cc5d474e7e",
+  "current_sha256": {
+    "innovative_solution/review_validation.py": "36a21c0465cf6fb3dda9ed20b7c2585238706d4997c8560bb0dcb44beb4d701d",
+    "innovative_solution/tests/test_review_validation.py": "c1bf0180a5657327368d2190911a11b88629d8fa89a821165e591905bf052bd0"
+  },
+  "changes": [
+    {
+      "change": "Reject empty splits and nonfinite time proxies before and after boundary purging",
+      "impact_on_completed_run": "All 13 saved splits passed the new assertions; training rows are unchanged"
+    },
+    {
+      "change": "Use conformal_quantile instead of manually clipped order statistic",
+      "impact_on_completed_run": "80 saved calibration residuals give exactly the stored radius; numerical difference is 0"
+    },
+    {
+      "change": "Record calibration-versus-tail entity and time boundary",
+      "impact_on_completed_run": "Read-only reconstruction confirms 80 calibration rows and 100 tail rows have zero group overlap and strict proxy separation"
+    },
+    {
+      "change": "Allow missing released A answers and export original-training-only B",
+      "impact_on_completed_run": "Released A answers were present in the completed run, so the new missing-answer branch is not used"
+    },
+    {
+      "change": "Clarify conditional-answer behavior in protocol version review_v2_1",
+      "impact_on_completed_run": "Metadata clarification only; candidate models, seeds, row windows and estimator parameters are unchanged"
+    }
+  ],
+  "verification": {
+    "total_tests_passed": 23,
+    "optional_answer_entry_tests": "Actual run_review_validation control flow and temporary file export tested with a learner double for both available and missing answers; this does not constitute model-quality validation",
+    "existing_split_records_checked": 13,
+    "calibrated_radius_recomputed": 0.2450912914675767,
+    "difference_from_stored_radius": 0,
+    "supplemental_audit": "calibration_tail_audit_after_run.json"
+  }
+}

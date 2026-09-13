@@ -1,0 +1,40 @@
+{
+  "version": "review_v2",
+  "interpretation": "retrospective_not_pristine_test",
+  "outer_windows": [
+    [
+      320,
+      100
+    ],
+    [
+      420,
+      100
+    ],
+    [
+      520,
+      100
+    ]
+  ],
+  "development_end": 620,
+  "calibration_end": 700,
+  "inner_splits": 2,
+  "inner_block": 60,
+  "seeds": [
+    42,
+    143,
+    244
+  ],
+  "candidates": [
+    "raw_d2",
+    "raw_d3",
+    "full_d2",
+    "full_d3"
+  ],
+  "selection_metric": "pooled_inner_mse",
+  "n_estimators": 1200,
+  "raw_view": "selected_raw_plus_missing_plus_onehot",
+  "time_order": "median_parsed_timestamp_proxy_not_release_order",
+  "external_A": "retrospective_known_labels_not_used_in_numeric_fit",
+  "B_refit": "fixed_uniform_weight_for_released_A_no_claim_of_optimal_weight",
+  "interval": "frozen_development_model_separate_calibration_descriptive_only"
+}

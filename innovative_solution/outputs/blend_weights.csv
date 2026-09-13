@@ -1,0 +1,6 @@
+﻿model,weight
+Ridge,0.0
+ExtraTrees,0.055232109349865624
+XGBoost,0.6061284388123558
+XGB-Recency,0.33863945183777855
+MLP-Ensemble,0.0

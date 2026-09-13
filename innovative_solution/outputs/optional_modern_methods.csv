@@ -1,0 +1,4 @@
+﻿method,role,installed,executed,note
+TabPFN v2,小样本表格基础模型候选,False,False,主流程先筛选至320维；仅在安装模型与权重后单独评测
+TabM,参数高效MLP集成候选,False,False,当前使用可运行的MLP-Ensemble验证集成方向，不冒充TabM
+SCARF,随机特征破坏自监督预训练候选,False,False,需要PyTorch；主流程已显式建模缺失掩码与工序异常统计

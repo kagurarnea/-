@@ -1,0 +1,4 @@
+﻿dataset,rows,columns,duplicate_id_extra_rows,proxy_definition,proxy_missing_rows,proxy_min,proxy_max,row_order_proxy_spearman,adjacent_time_decreases,row_order_id_spearman,all_parsed_timestamp_min,all_parsed_timestamp_max
+train,800,5954,35,median of archived 72 timestamp fields; physical time meaning unverified,0,2017-06-15 19:00:27,2017-07-23 05:37:16.500000,0.9521917041845651,296,0.9999997949215335,2017-06-11 09:27:35,2017-07-27 04:46:26
+A,300,5953,1,median of archived 72 timestamp fields; physical time meaning unverified,0,2017-05-30 12:25:36.500000,2017-07-22 00:27:48.500000,0.08422842133183038,128,0.16665720359750807,2017-05-20 14:24:10,2017-07-23 12:09:35
+B,412,5953,1,median of archived 72 timestamp fields; physical time meaning unverified,0,2017-06-05 16:14:41.500000,2017-06-19 18:34:30,0.9510558656975838,168,0.9999999571024811,2017-06-02 08:49:52,2017-06-24 20:58:40

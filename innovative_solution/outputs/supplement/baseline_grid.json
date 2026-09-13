@@ -1,0 +1,61 @@
+{
+  "Ridge": [
+    {
+      "alpha": 10
+    },
+    {
+      "alpha": 100
+    },
+    {
+      "alpha": 1000
+    }
+  ],
+  "RandomForest": [
+    {
+      "min_samples_leaf": 2
+    },
+    {
+      "min_samples_leaf": 5
+    }
+  ],
+  "GBR": [
+    {
+      "max_depth": 2
+    },
+    {
+      "max_depth": 3
+    }
+  ],
+  "SVR": [
+    {
+      "C": 1
+    },
+    {
+      "C": 10
+    }
+  ],
+  "LightGBM": [
+    {
+      "num_leaves": 7
+    },
+    {
+      "num_leaves": 15
+    }
+  ],
+  "CatBoost": [
+    {
+      "depth": 4
+    },
+    {
+      "depth": 6
+    }
+  ],
+  "XGBoost": [
+    {
+      "max_depth": 2
+    },
+    {
+      "max_depth": 3
+    }
+  ]
+}

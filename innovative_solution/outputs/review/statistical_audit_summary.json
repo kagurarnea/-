@@ -1,0 +1,534 @@
+{
+  "script_sha256": "e49cc6fd941bd6ae0447a68433b79481c74e860b5af405db2bcfd946b3f80078",
+  "source_sha256": {
+    "train": "4db8b211a7d2c93eedaa2251d54e2d7055276fb2021b3c3a743b5b0f6686c613",
+    "A": "f9d98dc51361b8be6ad1699a8adb85c1ef412113db708082da33bee8b8269fcf",
+    "B": "97a217b84f51b2434e8f0bf628614460c842a283b3686f31265b547f9e53623b"
+  },
+  "archived_output_sha256": {
+    "feature_audit.csv": "5cb55a8531cde42a765acbbd1ed4c88bab1b56b8ba4dfc9076bc69256098644b",
+    "predictions_A_detailed.csv": "8550c987f934bfedd30acdc48771ec26e40372e51e80594dbbb124f106b99d10",
+    "predictions_A_blend_baseline.csv": "76312a4370c76ded15de3d6945eddc21976e3dca01580e02211385db7ee9bd9c",
+    "temporal_holdout_predictions.csv": "213fc874b1ef589ebea165db855b6ab5b3034209e4c5e0b8abdec608eba26eb4",
+    "phase_b_backtest_predictions.csv": "451b5ef8f695645be9ca4b7baedd5b734426d3fa21f13a8614ae50e773bdaaa7"
+  },
+  "timestamp_columns_used": 72,
+  "dataset_temporal_audit": [
+    {
+      "dataset": "train",
+      "rows": 800,
+      "columns": 5954,
+      "duplicate_id_extra_rows": 35,
+      "proxy_definition": "median of archived 72 timestamp fields; physical time meaning unverified",
+      "proxy_missing_rows": 0,
+      "proxy_min": "2017-06-15 19:00:27",
+      "proxy_max": "2017-07-23 05:37:16.500000",
+      "row_order_proxy_spearman": 0.9521917041845651,
+      "adjacent_time_decreases": 296,
+      "row_order_id_spearman": 0.9999997949215335,
+      "all_parsed_timestamp_min": "2017-06-11 09:27:35",
+      "all_parsed_timestamp_max": "2017-07-27 04:46:26"
+    },
+    {
+      "dataset": "A",
+      "rows": 300,
+      "columns": 5953,
+      "duplicate_id_extra_rows": 1,
+      "proxy_definition": "median of archived 72 timestamp fields; physical time meaning unverified",
+      "proxy_missing_rows": 0,
+      "proxy_min": "2017-05-30 12:25:36.500000",
+      "proxy_max": "2017-07-22 00:27:48.500000",
+      "row_order_proxy_spearman": 0.08422842133183038,
+      "adjacent_time_decreases": 128,
+      "row_order_id_spearman": 0.16665720359750807,
+      "all_parsed_timestamp_min": "2017-05-20 14:24:10",
+      "all_parsed_timestamp_max": "2017-07-23 12:09:35"
+    },
+    {
+      "dataset": "B",
+      "rows": 412,
+      "columns": 5953,
+      "duplicate_id_extra_rows": 1,
+      "proxy_definition": "median of archived 72 timestamp fields; physical time meaning unverified",
+      "proxy_missing_rows": 0,
+      "proxy_min": "2017-06-05 16:14:41.500000",
+      "proxy_max": "2017-06-19 18:34:30",
+      "row_order_proxy_spearman": 0.9510558656975838,
+      "adjacent_time_decreases": 168,
+      "row_order_id_spearman": 0.9999999571024811,
+      "all_parsed_timestamp_min": "2017-06-02 08:49:52",
+      "all_parsed_timestamp_max": "2017-06-24 20:58:40"
+    }
+  ],
+  "dataset_overlap": [
+    {
+      "dataset": "A",
+      "rows": 300,
+      "rows_in_train_proxy_range": 50,
+      "rows_after_train_proxy_max": 0,
+      "rows_before_train_proxy_min": 250,
+      "id_overlap_with_train": 0
+    },
+    {
+      "dataset": "B",
+      "rows": 412,
+      "rows_in_train_proxy_range": 39,
+      "rows_after_train_proxy_max": 0,
+      "rows_before_train_proxy_min": 373,
+      "id_overlap_with_train": 0
+    }
+  ],
+  "duplicate_id_groups": [
+    {
+      "dataset": "train",
+      "ID": "NH1001",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 184,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1002",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 184,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1003",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 183,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1004",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 180,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1024",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 187,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1025",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 184,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1026",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 175,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1027",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 183,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1028",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 184,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1029",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 184,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1030",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 188,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1031",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 187,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1032",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 187,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1033",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 179,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1034",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 186,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1035",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 178,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1036",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 181,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1068",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 184,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1070",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 183,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1071",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 183,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1072",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 185,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1079",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 181,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1138",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 196,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1322",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 16,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1323",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 16,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1324",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 16,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1469",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 200,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1470",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 202,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1543",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 16,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1544",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 16,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1545",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 16,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1546",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 16,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1573",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 16,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1574",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 16,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "train",
+      "ID": "NH1915",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 220,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "A",
+      "ID": "NH1954",
+      "rows": 2,
+      "known_y_unique": 1,
+      "differing_X_columns": 220,
+      "total_X_columns": 5952
+    },
+    {
+      "dataset": "B",
+      "ID": "NH0840",
+      "rows": 2,
+      "known_y_unique": 0,
+      "differing_X_columns": 190,
+      "total_X_columns": 5952
+    }
+  ],
+  "archived_split_ID_overlap": [
+    {
+      "scheme": "archived_holdout",
+      "fold": 0,
+      "train_rows": 640,
+      "valid_rows": 160,
+      "shared_ID_groups": 4,
+      "validation_rows_with_ID_in_training": 4,
+      "shared_IDs": "NH1543;NH1544;NH1545;NH1546"
+    },
+    {
+      "scheme": "archived_random_CV",
+      "fold": 1,
+      "train_rows": 512,
+      "valid_rows": 128,
+      "shared_ID_groups": 10,
+      "validation_rows_with_ID_in_training": 10,
+      "shared_IDs": "NH1002;NH1025;NH1026;NH1027;NH1028;NH1036;NH1072;NH1138;NH1322;NH1470"
+    },
+    {
+      "scheme": "archived_random_CV",
+      "fold": 2,
+      "train_rows": 512,
+      "valid_rows": 128,
+      "shared_ID_groups": 8,
+      "validation_rows_with_ID_in_training": 8,
+      "shared_IDs": "NH1024;NH1025;NH1033;NH1035;NH1071;NH1079;NH1138;NH1574"
+    },
+    {
+      "scheme": "archived_random_CV",
+      "fold": 3,
+      "train_rows": 512,
+      "valid_rows": 128,
+      "shared_ID_groups": 11,
+      "validation_rows_with_ID_in_training": 11,
+      "shared_IDs": "NH1002;NH1024;NH1026;NH1031;NH1032;NH1033;NH1068;NH1072;NH1322;NH1323;NH1470"
+    },
+    {
+      "scheme": "archived_random_CV",
+      "fold": 4,
+      "train_rows": 512,
+      "valid_rows": 128,
+      "shared_ID_groups": 10,
+      "validation_rows_with_ID_in_training": 10,
+      "shared_IDs": "NH1003;NH1027;NH1031;NH1032;NH1035;NH1068;NH1071;NH1079;NH1323;NH1574"
+    },
+    {
+      "scheme": "archived_random_CV",
+      "fold": 5,
+      "train_rows": 512,
+      "valid_rows": 128,
+      "shared_ID_groups": 3,
+      "validation_rows_with_ID_in_training": 3,
+      "shared_IDs": "NH1003;NH1028;NH1036"
+    },
+    {
+      "scheme": "archived_rolling_CV",
+      "fold": 1,
+      "train_rows": 320,
+      "valid_rows": 80,
+      "shared_ID_groups": 3,
+      "validation_rows_with_ID_in_training": 3,
+      "shared_IDs": "NH1322;NH1323;NH1324"
+    },
+    {
+      "scheme": "archived_rolling_CV",
+      "fold": 2,
+      "train_rows": 400,
+      "valid_rows": 80,
+      "shared_ID_groups": 0,
+      "validation_rows_with_ID_in_training": 0,
+      "shared_IDs": ""
+    },
+    {
+      "scheme": "archived_rolling_CV",
+      "fold": 3,
+      "train_rows": 480,
+      "valid_rows": 80,
+      "shared_ID_groups": 0,
+      "validation_rows_with_ID_in_training": 0,
+      "shared_IDs": ""
+    },
+    {
+      "scheme": "archived_rolling_CV",
+      "fold": 4,
+      "train_rows": 560,
+      "valid_rows": 80,
+      "shared_ID_groups": 0,
+      "validation_rows_with_ID_in_training": 0,
+      "shared_IDs": ""
+    }
+  ],
+  "exact_feature_duplicate_groups": [],
+  "interval_coverage": [
+    {
+      "evaluation": "current_A",
+      "nominal_coverage": 0.9,
+      "rows": 300,
+      "covered_rows": 256,
+      "observed_coverage": 0.8533333333333334,
+      "mean_width": 0.48528622836429314,
+      "interpretation": "retrospective empirical coverage; no exchangeability or independent calibration guarantee"
+    },
+    {
+      "evaluation": "original_blend_A",
+      "nominal_coverage": 0.9,
+      "rows": 300,
+      "covered_rows": 260,
+      "observed_coverage": 0.8666666666666667,
+      "mean_width": 0.5222666609601703,
+      "interpretation": "retrospective empirical coverage; no exchangeability or independent calibration guarantee"
+    },
+    {
+      "evaluation": "archived_holdout_blend",
+      "nominal_coverage": 0.9,
+      "rows": 160,
+      "covered_rows": 144,
+      "observed_coverage": 0.9,
+      "mean_width": 0.5222666609601703,
+      "interpretation": "empirical coverage only; repeated development and calibration reuse limit inference"
+    }
+  ],
+  "retrospective_metrics": [
+    {
+      "evaluation": "retrospective_A_current",
+      "rows": 300,
+      "mse": 0.02752459815147832,
+      "rmse": 0.16590538915743008,
+      "mae": 0.13441675619745266,
+      "r2": 0.5017127450730607,
+      "bias_prediction_minus_y": 0.049903376575194655
+    },
+    {
+      "evaluation": "retrospective_A_original_blend",
+      "rows": 300,
+      "mse": 0.030015997843671684,
+      "rmse": 0.17325125639853722,
+      "mae": 0.14152855602188102,
+      "r2": 0.4566100806593324,
+      "bias_prediction_minus_y": 0.05459983476474176
+    }
+  ],
+  "B_baseline_provenance": {
+    "baseline_label_in_backtest": "train_only_robust_blend",
+    "max_abs_difference_from_current_A_on_same_positions": 4.440892098500626e-16,
+    "max_abs_difference_from_archived_blend_on_same_positions": 0.0669302646377532
+  },
+  "inference_limits": [
+    "A labels were reviewed in development history; current A is retrospective, not an untouched blind test.",
+    "File row order is not certified manufacturing chronology; timestamp median is itself a heuristic.",
+    "Feature schema was inferred from all original 800 covariate rows before CV.",
+    "Blend weights and phase strategies were chosen on the same validation predictions whose minimum error is reported.",
+    "Residual quantile intervals reuse selection residuals and lack verified exchangeability or independent calibration.",
+    "Block bootstrap is exploratory row-order sensitivity, not post-selection-corrected or physical-batch-confirmatory inference."
+  ]
+}

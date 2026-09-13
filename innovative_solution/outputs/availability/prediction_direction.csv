@@ -1,0 +1,4 @@
+dataset,n,before_train_min,within_train_range,after_train_max,minimum_proxy,maximum_proxy,certified_production_time
+train,800,0,800,0,2017-06-15 19:00:27,2017-07-23 05:37:16.500000,False
+A,300,250,50,0,2017-05-30 12:25:36.500000,2017-07-22 00:27:48.500000,False
+B,412,373,39,0,2017-06-05 16:14:41.500000,2017-06-19 18:34:30,False

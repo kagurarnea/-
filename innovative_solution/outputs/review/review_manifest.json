@@ -1,0 +1,88 @@
+{
+  "protocol": {
+    "version": "review_v2",
+    "interpretation": "retrospective_not_pristine_test",
+    "outer_windows": [
+      [
+        320,
+        100
+      ],
+      [
+        420,
+        100
+      ],
+      [
+        520,
+        100
+      ]
+    ],
+    "development_end": 620,
+    "calibration_end": 700,
+    "inner_splits": 2,
+    "inner_block": 60,
+    "seeds": [
+      42,
+      143,
+      244
+    ],
+    "candidates": [
+      "raw_d2",
+      "raw_d3",
+      "full_d2",
+      "full_d3"
+    ],
+    "selection_metric": "pooled_inner_mse",
+    "n_estimators": 1200,
+    "raw_view": "selected_raw_plus_missing_plus_onehot",
+    "time_order": "median_parsed_timestamp_proxy_not_release_order",
+    "external_A": "retrospective_known_labels_not_used_in_numeric_fit",
+    "B_refit": "fixed_uniform_weight_for_released_A_no_claim_of_optimal_weight",
+    "interval": "frozen_development_model_separate_calibration_descriptive_only"
+  },
+  "selected_candidate": "full_d3",
+  "original_data_rows": 800,
+  "unique_validation_groups": 765,
+  "n_development": 620,
+  "n_calibration": 80,
+  "n_tail": 100,
+  "tail_metrics": {
+    "mse": 0.042648935196831446,
+    "rmse": 0.20651618628289514,
+    "mae": 0.142695965123968,
+    "r2": 0.20313484635939927
+  },
+  "observed_tail_coverage": 0.87,
+  "empirical_radius": 0.2450912914675767,
+  "exchangeability_established": false,
+  "independent_test_available": false,
+  "retrospective_A_metrics": {
+    "mse": 0.031630179819227555,
+    "rmse": 0.17784875546156503,
+    "mae": 0.1445133309189357,
+    "r2": 0.4273879898907129
+  },
+  "A_labels_used_in_numeric_training_or_selection": false,
+  "A_labels_seen_in_previous_research": true,
+  "B_labels_used": false,
+  "deployment_intervals_exported": false,
+  "elapsed_sec": 534.5559216000038,
+  "input_sha256": {
+    "训练集.xlsx": "4db8b211a7d2c93eedaa2251d54e2d7055276fb2021b3c3a743b5b0f6686c613",
+    "测试集A.xlsx": "f9d98dc51361b8be6ad1699a8adb85c1ef412113db708082da33bee8b8269fcf",
+    "测试集B.xlsx": "97a217b84f51b2434e8f0bf628614460c842a283b3686f31265b547f9e53623b",
+    "测试集A_答案.csv": "bf1985c8598631af76baf07b15707366cdbaf6588e2d0f5145ac88f572d51235"
+  },
+  "code_sha256": {
+    "review_validation.py": "8101c1905d6983898ca7d05ee94064b261d16c124d13ebf5e18a72cc5d474e7e",
+    "pipeline.py": "4ccc301b2744be76b1c8a4a4c039ffa93c3f6a965f81611276ae6b985423ec7f",
+    "config.py": "b0fec1797c73777d5b258a018a4aed2cacab5ff400a714634d019a2c2e93c476"
+  },
+  "protocol_sha256": "ce3c7d2d85d64194c3f83c60096ba6d42a9692fc8284956616a95e9a3699d61f",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "xgboost": "3.4.0",
+    "joblib": "1.5.2"
+  }
+}

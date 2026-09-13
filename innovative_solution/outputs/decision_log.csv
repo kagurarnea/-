@@ -1,0 +1,22 @@
+stage,candidate_or_change,evidence,decision,status
+验证,仅随机五折CV,随机OOF约0.010但时间外推约0.033,增加滚动时间CV和时间外推评估,modified
+区间校准,随机OOF残差校准,初始90%区间外推覆盖率70.6%,改用滚动时间OOF残差校准,modified
+缺失处理,统一均值或中位数,缺失模式随工序变化,工序设备条件均值并以训练折中位数兜底,retained
+特征选择,一次模型重要性,容易受偶然相关和时间漂移影响,联合贡献相关性和时间漂移选择Top320,modified
+时间字段,删除时间字段,时间包含批次与工序等待信息,解析并构造相对时间和工序间隔,modified
+量纲处理,直接跨列聚合,不同物理量尺度不可直接比较,中位数IQR稳健标准化后计算工序统计,modified
+参数搜索,min_child_weight=1,多数嵌套外层折选择3,主模型改为3,modified
+特征视图,process_time不含类别One-Hot,三折消融较优但四折滚动未确认,恢复full完整视图,reverted
+模型,XGBoost,滚动与外推均为最强单模型,最终融合权重60.6%,retained
+模型,近期加权XGBoost,部分未来时间折具有互补性,最终融合权重33.9%,retained
+模型,ExtraTrees,提供少量非线性多样性,最终融合权重5.5%,retained
+模型,Ridge,滚动表现较弱且融合权重为0,只保留基线,discarded_from_final
+模型,MLP-Ensemble,小样本下不稳定且融合权重为0,只保留深度学习对照,discarded_from_final
+模型,RandomForest,滚动MSE 0.030048高于XGBoost,只保留标准树模型对照,discarded_from_final
+分布变换,Yeo-Johnson,混合量纲下MSE约5.08e5,舍弃,discarded
+分布假设,统一正态分布,12个重要特征中0个通过KS检验,舍弃统一分布假设,discarded
+降维,PCA50,线性分支最低MSE 0.038703但弱于树模型,只保留降维对照,analysis_only
+降维,SVD50和PLS20,滚动误差弱于PCA50和树模型,只保留对照,analysis_only
+降维,Autoencoder16,接口已实现但默认实验未执行,保留扩展接口,reserved
+样本,NH1835删除,缺少标签或采集错误证据,保留样本并执行局部诊断,discarded
+现代模型,TabPFN TabM SCARF,当前依赖或权重未安装,不纳入当前结果,reserved

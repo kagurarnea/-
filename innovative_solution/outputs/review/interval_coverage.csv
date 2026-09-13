@@ -1,0 +1,4 @@
+﻿evaluation,nominal_coverage,rows,covered_rows,observed_coverage,mean_width,interpretation
+current_A,0.9,300,256,0.8533333333333334,0.48528622836429314,retrospective empirical coverage; no exchangeability or independent calibration guarantee
+original_blend_A,0.9,300,260,0.8666666666666667,0.5222666609601703,retrospective empirical coverage; no exchangeability or independent calibration guarantee
+archived_holdout_blend,0.9,160,144,0.9,0.5222666609601703,empirical coverage only; repeated development and calibration reuse limit inference

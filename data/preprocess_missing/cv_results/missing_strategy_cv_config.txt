@@ -1,0 +1,16 @@
+data_dir=C:\Users\lenovo\Downloads\my method\data
+zero_mode=keep
+strategies=native,mean,median,sentinel,median_indicator,tool_mean,operation_tool_mean,operation_tool_median
+cv_seed=42
+n_estimators=1200
+learning_rate=0.03
+max_depth=3
+min_child_weight=1.0
+subsample=0.8
+colsample_bytree=0.5
+reg_alpha=0.01
+reg_lambda=1.0
+gamma=0.0
+tree_method=hist
+seed=42
+min_group_count=3

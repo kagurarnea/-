@@ -1,0 +1,3 @@
+﻿comparison,reference,candidate,delta_mse,ci95_low,ci95_high,bootstrap_positive_probability,n_samples
+加权融合 vs XGB,XGB,Weighted ensemble,4.29030039078852e-05,-6.456667554198401e-05,0.00014461732710333881,0.7892,800
+残差校正 vs 全局模型,alpha=0.0,alpha=0.3,0.00017432046295938846,-5.007822210323851e-05,0.0004035469286614718,0.9386,800

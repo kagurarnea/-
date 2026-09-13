@@ -1,0 +1,85 @@
+工业AI特征工程实验配置
+
+固定缺失值：
+operation_tool_mean
+
+历史缺失值CV MSE：
+0.0135389961
+
+CV：
+5 Fold
+shuffle=True
+random_state=42
+
+XGBoost：
+
+n_estimators=1200
+learning_rate=0.03
+max_depth=3
+min_child_weight=1
+subsample=0.8
+colsample_bytree=0.5
+reg_alpha=0.01
+reg_lambda=1.0
+gamma=0
+tree_method=hist
+
+理论分布：
+
+Normal
+LogNormal
+Gamma
+Weibull
+
+特征变换：
+
+none
+Log1p
+Yeo-Johnson
+
+模型特征选择：
+
+RandomForest
+ExtraTrees
+XGBoost
+
+Top-K：
+
+50
+100
+200
+300
+500
+
+降维：
+
+none
+PCA90
+PCA95
+PCA50
+TruncatedSVD50
+
+量纲：
+
+none
+StandardScaler
+MinMaxScaler
+
+数据安全：
+
+NaN -> Train Median
+Inf -> NaN -> Train Median
+极端值 -> NaN -> Train Median
+
+严格原则：
+
+1. 缺失值不再重新比较。
+2. 缺失处理固定为operation_tool_mean。
+3. 所有CV统计量只来自Train Fold。
+4. 特征变换只在Train Fold fit。
+5. 特征选择模型只在Train Fold训练。
+6. Scaler只在Train Fold fit。
+7. PCA只在Train Fold fit。
+8. Valid Fold只执行transform。
+9. 树模型不强制标准化。
+10. PCA采用StandardScaler -> PCA。

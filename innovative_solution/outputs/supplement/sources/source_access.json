@@ -1,0 +1,55 @@
+[
+  {
+    "name": "competition_intro",
+    "url": "https://tianchi.aliyun.com/competition/entrance/231633/introduction",
+    "http_status": 200,
+    "text_length": 665,
+    "sha256": "8eab0db5eb47285c2d19f2672b2c8dcb650da01e47e5eeb6b36206322d1ed13f",
+    "rule_permission_verified": false
+  },
+  {
+    "name": "competition_rules",
+    "url": "https://tianchi.aliyun.com/competition/entrance/231633/rule",
+    "http_status": 200,
+    "text_length": 665,
+    "sha256": "c51ebcf49e4359db7d3b667bed20f0cf8d0fd796e7354b1fdf6af48cb3b31245",
+    "rule_permission_verified": false
+  },
+  {
+    "name": "lightgbm_paper",
+    "url": "https://proceedings.neurips.cc/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html",
+    "http_status": 200,
+    "text_length": 2609,
+    "sha256": "7143ec14aa61edd87aa5959d5a4abaf5846d79cdd82da8d8c647fb72ca29fd2a",
+    "rule_permission_verified": null
+  },
+  {
+    "name": "lightgbm_parameters",
+    "url": "https://lightgbm.readthedocs.io/en/stable/pythonapi/lightgbm.LGBMRegressor.html",
+    "http_status": 200,
+    "text_length": 28987,
+    "sha256": "ec3bdd08d4ef39abdd6872d16a8d867b96face8c49022650164bd68fd360d4ca",
+    "rule_permission_verified": null
+  },
+  {
+    "name": "catboost_parameters",
+    "url": "https://catboost.ai/en/docs/concepts/python-reference_catboostregressor",
+    "http_status": 200,
+    "text_length": 11356,
+    "sha256": "5d686af8aab4d86c4945c169bf2ec05f25dd6db2d91236e8b300b29a27490692",
+    "rule_permission_verified": null
+  },
+  {
+    "name": "catboost_paper",
+    "url": "https://proceedings.neurips.cc/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html",
+    "http_status": 200,
+    "text_length": 1715,
+    "sha256": "55731fdc6f17a4bc5eed416996b873b760e9e3e332fc222aee23fc35a230b4b1",
+    "rule_permission_verified": null
+  },
+  {
+    "name": "catboost_arxiv",
+    "url": "https://arxiv.org/abs/1706.09516",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "input_fields": 5952,
+  "timestamp_fields": 72,
+  "verified_available_before_target": 0,
+  "unverified_input_fields": 5952,
+  "input_inventory_complete": true,
+  "physical_availability_audit_complete": false,
+  "user_confirmed_no_dictionary_or_timing_documentation": true,
+  "prospective_model_certified": false,
+  "removing_explicit_time_does_not_certify_other_inputs": true,
+  "required_evidence": [
+    "field dictionary",
+    "source system and event meaning",
+    "earliest release timestamp per field",
+    "Y measurement event",
+    "actual prediction decision point"
+  ],
+  "conclusion": "All current model comparisons are retrospective associations on complete anonymous records."
+}

@@ -1,0 +1,89 @@
+工业AI深度诊断报告
+
+==================================================
+当前固定模型
+==================================================
+缺失值：operation_tool_mean
+特征选择：ExtraTrees Top300
+最终模型：XGBoost
+
+==================================================
+OOF总体结果
+==================================================
+MSE = 0.0127935154
+RMSE = 0.1131084231
+MAE = 0.0807854899
+R2 = 0.709293
+
+==================================================
+最差Fold
+==================================================
+Fold = 5
+MSE = 0.0209783634
+样本数 = 160
+平均缺失率 = 0.006575
+平均0值率 = 0.041001
+Y均值 = 2.800309
+Y标准差 = 0.218587
+
+==================================================
+最差Tool
+==================================================
+Tool = O
+样本数 = 86
+MSE = 0.0258352096
+RMSE = 0.1607333495
+MAE = 0.0796300033
+平均缺失率 = 0.009131
+平均0值率 = 0.038378
+Y均值 = 2.910405
+Y标准差 = 0.234102
+
+==================================================
+Top 10异常样本
+==================================================
+ID=NH1835 | Tool=O | Fold=5 | Y=1.614240 | Pred=2.834806 | Residual=-1.220567 | AbsResidual=1.220567
+ID=NH1204 | Tool=L | Fold=5 | Y=2.357420 | Pred=2.840789 | Residual=-0.483369 | AbsResidual=0.483369
+ID=NH1856 | Tool=J | Fold=1 | Y=2.614328 | Pred=3.043776 | Residual=-0.429448 | AbsResidual=0.429448
+ID=NH1928 | Tool=J | Fold=5 | Y=2.524550 | Pred=2.917617 | Residual=-0.393067 | AbsResidual=0.393067
+ID=NH1665 | Tool=L | Fold=3 | Y=2.498465 | Pred=2.869434 | Residual=-0.370969 | AbsResidual=0.370969
+ID=NH1321 | Tool=M | Fold=2 | Y=2.472397 | Pred=2.795557 | Residual=-0.323160 | AbsResidual=0.323160
+ID=NH1569 | Tool=J | Fold=1 | Y=3.258172 | Pred=2.937083 | Residual=0.321089 | AbsResidual=0.321089
+ID=NH1231 | Tool=M | Fold=4 | Y=2.690453 | Pred=2.998792 | Residual=-0.308339 | AbsResidual=0.308339
+ID=NH1857 | Tool=J | Fold=5 | Y=2.542369 | Pred=2.848600 | Residual=-0.306231 | AbsResidual=0.306231
+ID=NH1085 | Tool=L | Fold=1 | Y=3.180055 | Pred=2.878791 | Residual=0.301264 | AbsResidual=0.301264
+
+==================================================
+Top 10稳定特征
+==================================================
+311X223 | Importance=0.01283691 | SelectedFolds=5/5 | Stability=1.00
+311X191 | Importance=0.00826410 | SelectedFolds=5/5 | Stability=1.00
+311X32 | Importance=0.00810355 | SelectedFolds=5/5 | Stability=1.00
+311X187 | Importance=0.00679230 | SelectedFolds=5/5 | Stability=1.00
+311X25 | Importance=0.00629918 | SelectedFolds=5/5 | Stability=1.00
+311X129 | Importance=0.00599722 | SelectedFolds=5/5 | Stability=1.00
+311X154 | Importance=0.00562202 | SelectedFolds=5/5 | Stability=1.00
+311X26 | Importance=0.00544423 | SelectedFolds=5/5 | Stability=1.00
+311X205 | Importance=0.00533834 | SelectedFolds=5/5 | Stability=1.00
+311X193 | Importance=0.00526849 | SelectedFolds=5/5 | Stability=1.00
+
+==================================================
+Top Operation
+==================================================
+Operation=311 | Features=127 | Importance=1.34115260
+Operation=210 | Features=84 | Importance=0.23169384
+Operation=420 | Features=56 | Importance=0.11622930
+Operation=344 | Features=43 | Importance=0.11525243
+Operation=520 | Features=50 | Importance=0.07985192
+Operation=220 | Features=15 | Importance=0.05785761
+Operation=310 | Features=8 | Importance=0.04880953
+Operation=300 | Features=10 | Importance=0.03875262
+Operation=750 | Features=13 | Importance=0.03431611
+Operation=330 | Features=20 | Importance=0.03130731
+
+==================================================
+输出目录
+==================================================
+C:\Users\lenovo\Downloads\my method\data\preprocess_missing\deep_diagnosis
+
+总耗时：0.97 分钟

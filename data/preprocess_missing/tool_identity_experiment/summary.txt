@@ -1,0 +1,27 @@
+工业AI Tool身份实验报告
+
+固定基础方案：
+缺失值 = operation_tool_mean
+基础特征 = ExtraTrees Top300
+Tool-Z = Top100
+Operation = All
+模型 = XGBoost
+
+实验结果：
+E3_tool_target_mean_std | MSE=0.0119606659 | RMSE=0.1093648292 | MAE=0.0781100193 | R2=0.728218 | ToolO_MSE=0.0283072949 | Features=497.8
+E5_tool_global_anomaly | MSE=0.0119687895 | RMSE=0.1094019631 | MAE=0.0787761322 | R2=0.728033 | ToolO_MSE=0.0280041375 | Features=507.8
+E0_baseline | MSE=0.0119793270 | RMSE=0.1094501120 | MAE=0.0787689725 | R2=0.727794 | ToolO_MSE=0.0276674737 | Features=488.8
+E4_tool_target_anomaly | MSE=0.0120016694 | RMSE=0.1095521309 | MAE=0.0785765779 | R2=0.727286 | ToolO_MSE=0.0285538454 | Features=502.8
+E2_tool_target_mean | MSE=0.0120251733 | RMSE=0.1096593511 | MAE=0.0786286190 | R2=0.726752 | ToolO_MSE=0.0282620125 | Features=496.8
+E1_tool_onehot | MSE=0.0121224694 | RMSE=0.1101020862 | MAE=0.0790170901 | R2=0.724541 | ToolO_MSE=0.0285901756 | Features=493.8
+
+Baseline MSE=0.0119793270
+Best MSE=0.0119606659
+Relative improvement=0.16%
+
+Hard Sample阈值=0.1656955205
+Hard Sample数量=80
+
+输出目录：C:\Users\lenovo\Downloads\my method\data\preprocess_missing\tool_identity_experiment
+
+总耗时：4.34分钟

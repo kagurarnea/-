@@ -1,0 +1,77 @@
+strategy,stratifier,level,n,covered,coverage,mean_width,wilson_low,wilson_high,small_group,interval_note
+fixed,overall,all,100,87,0.87,0.49018258293515343,0.7901964855992357,0.9224283257275948,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,predicted_tercile,lower_predicted,30,26,0.8666666666666667,0.4901825829351534,0.703186733179637,0.9469034451594526,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,predicted_tercile,middle_predicted,31,27,0.8709677419354839,0.4901825829351534,0.7114759374369357,0.9486571562537085,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,predicted_tercile,upper_predicted,39,34,0.8717948717948718,0.4901825829351537,0.7329425662025455,0.9439718246302862,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL,J,43,40,0.9302325581395349,0.4901825829351535,0.8139101309875801,0.9759884104227855,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL,M,11,10,0.9090909090909091,0.4901825829351534,0.6226415635484043,0.9837678271141151,True,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL,N,14,12,0.8571428571428571,0.4901825829351534,0.6005862050302965,0.9599060787285351,True,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL,O,16,10,0.625,0.4901825829351534,0.38641040545502714,0.8151876744113636,True,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL,L,16,15,0.9375,0.4901825829351534,0.7167126242970107,0.9888806552353576,True,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Tool,B,100,87,0.87,0.49018258293515343,0.7901964855992357,0.9224283257275948,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL_ID,E,75,68,0.9066666666666666,0.49018258293515343,0.819653131504585,0.9540514766093995,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL_ID,N,25,19,0.76,0.4901825829351534,0.5657031664457093,0.8850368630659855,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Tool (#1),B,100,87,0.87,0.49018258293515343,0.7901964855992357,0.9224283257275948,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL (#1),V,45,38,0.8444444444444444,0.4901825829351536,0.7121609112760374,0.9225457651524174,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL (#1),K,44,39,0.8863636363636364,0.49018258293515354,0.7602084758339172,0.950472193989075,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL (#1),T,11,10,0.9090909090909091,0.4901825829351534,0.6226415635484043,0.9837678271141151,True,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Chamber ID,2,44,39,0.8863636363636364,0.49018258293515354,0.7602084758339172,0.950472193989075,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Chamber ID,1,13,11,0.8461538461538461,0.4901825829351534,0.5776536898051745,0.9567418216419186,True,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Chamber ID,3,43,37,0.8604651162790697,0.4901825829351535,0.7273641203261714,0.9344427657203511,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL (#2),B,84,74,0.8809523809523809,0.4901825829351535,0.794550842255297,0.9340345075240096,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL (#2),C,12,10,0.8333333333333334,0.4901825829351534,0.5519691377470266,0.9530348578161463,True,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL (#2),A,4,3,0.75,0.4901825829351534,0.30064184258240184,0.9544127391902995,True,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Tool (#2),V,96,84,0.875,0.4901825829351534,0.794115318705986,0.9270279904007575,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Tool (#2),W,4,3,0.75,0.4901825829351534,0.30064184258240184,0.9544127391902995,True,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Tool (#3),R,80,70,0.875,0.4901825829351534,0.7849719790084033,0.9306644238399513,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Tool (#3),Q,20,17,0.85,0.4901825829351534,0.6395811352592431,0.9476312541037835,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Tool (#4),E,40,32,0.8,0.4901825829351534,0.652426936536005,0.895000102745623,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Tool (#4),C,60,55,0.9166666666666666,0.4901825829351535,0.8193105798166558,0.9638795433982692,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,OPERATION_ID,XY1,59,53,0.8983050847457628,0.4901825829351535,0.795361863737675,0.9525520275375955,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,OPERATION_ID,XY2,41,34,0.8292682926829268,0.49018258293515343,0.6873738759959581,0.91474748022405,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Tool (#5),14,100,87,0.87,0.49018258293515343,0.7901964855992357,0.9224283257275948,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Chamber,4.0,14,10,0.7142857142857143,0.4901825829351534,0.4535091567010681,0.8827862135542308,True,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Chamber,3.0,26,24,0.9230769230769231,0.4901825829351534,0.7585844622837095,0.9786449115277238,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Chamber,2.0,23,21,0.9130434782608695,0.4901825829351534,0.7320401892425634,0.9758199955157796,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Chamber,1.0,25,22,0.88,0.4901825829351534,0.7004420607907267,0.9583318284955964,False,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Chamber,5.0,9,7,0.7777777777777778,0.4901825829351534,0.45258896910698887,0.9367748928821533,True,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,Chamber,__MISSING__,3,3,1.0,0.4901825829351534,0.4385029682449546,1.0,True,Wilson is descriptive; within-device temporal dependence not modeled
+fixed,TOOL (#3),A,100,87,0.87,0.49018258293515343,0.7901964855992357,0.9224283257275948,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,overall,all,100,90,0.9,0.540555141363893,0.8256343384950865,0.9447708629393249,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,predicted_tercile,lower_predicted,30,26,0.8666666666666667,0.5398190199257685,0.703186733179637,0.9469034451594526,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,predicted_tercile,middle_predicted,31,29,0.9354838709677419,0.5410838607568247,0.7928136326370188,0.9821252164780854,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,predicted_tercile,upper_predicted,39,35,0.8974358974358975,0.5407011244911458,0.7642114553714348,0.9593866865533163,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL,J,43,40,0.9302325581395349,0.537797703119013,0.8139101309875801,0.9759884104227855,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL,M,11,10,0.9090909090909091,0.5470491845886191,0.6226415635484043,0.9837678271141151,True,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL,N,14,13,0.9285714285714286,0.5380419100375312,0.6853129557584889,0.9872777847521093,True,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL,O,16,12,0.75,0.5432687157287459,0.5050168346449122,0.8981793250878696,True,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL,L,16,15,0.9375,0.5429866049757232,0.7167126242970107,0.9888806552353576,True,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Tool,B,100,90,0.9,0.540555141363893,0.8256343384950865,0.9447708629393249,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL_ID,E,75,69,0.92,0.5363748533552711,0.8362520966647771,0.9628198756496662,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL_ID,N,25,21,0.84,0.5530960053897587,0.6534637839282114,0.9359654854332355,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Tool (#1),B,100,90,0.9,0.540555141363893,0.8256343384950865,0.9447708629393249,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL (#1),V,45,39,0.8666666666666667,0.5392103931592083,0.7382269817382293,0.9374285125243192,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL (#1),K,44,41,0.9318181818181818,0.54616724737362,0.8177495562977846,0.9765406040926183,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL (#1),T,11,10,0.9090909090909091,0.5236079599805138,0.6226415635484043,0.9837678271141151,True,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Chamber ID,2,44,40,0.9090909090909091,0.5384261831744361,0.7884076083340138,0.9640778067726837,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Chamber ID,1,13,11,0.8461538461538461,0.533685275309537,0.5776536898051745,0.9567418216419186,True,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Chamber ID,3,43,39,0.9069767441860465,0.54481054645791,0.783972963587464,0.9632283593682872,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL (#2),B,84,76,0.9047619047619048,0.542301654709624,0.8231736440500729,0.9509482900904406,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL (#2),C,12,11,0.9166666666666666,0.5316660885130393,0.646120088858883,0.9851349055950829,True,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL (#2),A,4,3,0.75,0.5305455196561046,0.30064184258240184,0.9544127391902995,True,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Tool (#2),V,96,87,0.90625,0.5409722089350509,0.8313466930777846,0.949891891787854,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Tool (#2),W,4,3,0.75,0.5305455196561046,0.30064184258240184,0.9544127391902995,True,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Tool (#3),R,80,72,0.9,0.5416515260966464,0.8148931119389591,0.9484523844326191,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Tool (#3),Q,20,18,0.9,0.53616960243288,0.6989663547715128,0.9721335187862319,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Tool (#4),E,40,34,0.85,0.5474613864917904,0.709276756335103,0.9293881228267964,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Tool (#4),C,60,56,0.9333333333333333,0.5359509779452949,0.8407464268680283,0.9737713012754938,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,OPERATION_ID,XY1,59,54,0.9152542372881356,0.5450048594780394,0.8164820473258972,0.9632579669823632,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,OPERATION_ID,XY2,41,36,0.8780487804878049,0.5341518884679264,0.7445578847902312,0.9467666353142228,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Tool (#5),14,100,90,0.9,0.540555141363893,0.8256343384950865,0.9447708629393249,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Chamber,4.0,14,10,0.7142857142857143,0.5338649063253206,0.4535091567010681,0.8827862135542308,True,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Chamber,3.0,26,24,0.9230769230769231,0.5372990646418757,0.7585844622837095,0.9786449115277238,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Chamber,2.0,23,21,0.9130434782608695,0.5373161695661024,0.7320401892425634,0.9758199955157796,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Chamber,1.0,25,23,0.92,0.5430750648298853,0.7503389104960468,0.9777795987151524,False,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Chamber,5.0,9,9,1.0,0.5626123279345578,0.7008549515804559,1.0,True,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,Chamber,__MISSING__,3,3,1.0,0.5376567649891815,0.4385029682449546,1.0,True,Wilson is descriptive; within-device temporal dependence not modeled
+rolling80_immediate_labels,TOOL (#3),A,100,90,0.9,0.540555141363893,0.8256343384950865,0.9447708629393249,False,Wilson is descriptive; within-device temporal dependence not modeled

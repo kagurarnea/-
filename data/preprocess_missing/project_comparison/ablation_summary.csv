@@ -1,0 +1,7 @@
+﻿comparison,reference,best,reference_mse,best_mse,improvement_pct,supports_best
+缺失值处理,median,operation_tool_mean,0.0138966315547533,0.013538996125504,2.573540414021925,True
+特征工程,原始清洗特征,extra_trees Top300,0.0134777453839192,0.0121551955664202,9.812841686985594,True
+工具身份特征,E0_baseline,E3_tool_target_mean_std,0.0119793270155714,0.0119606658554551,0.15577803404183962,True
+工序与异常特征,E0_baseline,E6_tool_operation,0.0127935153667956,0.0121381396354289,5.122718131622114,True
+残差校正,global_baseline,best_residual_corrected,0.0119606658554551,0.0117863453924957,1.457447813241059,True
+困难样本专家,E0_global_only,E0_global_only,0.0119793270155714,0.0119793270155714,0.0,False

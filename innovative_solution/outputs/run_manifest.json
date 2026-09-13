@@ -1,0 +1,51 @@
+{
+  "train_rows": 800,
+  "test_a_rows": 300,
+  "test_b_rows": 412,
+  "development_rows": 640,
+  "rolling_calibration_rows": 320,
+  "temporal_holdout_rows": 160,
+  "clean_numeric_features": 2617,
+  "timestamp_features": 72,
+  "categorical_features": 14,
+  "engineered_features": 802,
+  "feature_view": "full",
+  "blend_weights": {
+    "Ridge": 0.0,
+    "ExtraTrees": 0.055232109349865624,
+    "XGBoost": 0.6061284388123558,
+    "XGB-Recency": 0.33863945183777855,
+    "MLP-Ensemble": 0.0
+  },
+  "conformal_radius": 0.26113333048008514,
+  "holdout_coverage": 0.9,
+  "holdout_blend_metrics": {
+    "mse": 0.03288522206861141,
+    "rmse": 0.1813428302101062,
+    "mae": 0.12626796660128164,
+    "r2": 0.2853352611935298
+  },
+  "total_elapsed_sec": 130.4564640000026,
+  "holdout_fit_times": {
+    "Dummy": 0.0019862000044668093,
+    "Ridge": 0.14229750000231434,
+    "ExtraTrees": 0.2520163000008324,
+    "XGBoost": 2.4080813999971724,
+    "XGB-Recency": 2.3408788000015193,
+    "MLP-Ensemble": 3.55186120000144
+  },
+  "final_fit_times": {
+    "Dummy": 0.0007667000027140602,
+    "Ridge": 0.16639690000010887,
+    "ExtraTrees": 0.2806761000028928,
+    "XGBoost": 2.528563200001372,
+    "XGB-Recency": 2.5336956000028295,
+    "MLP-Ensemble": 5.134947700003977
+  },
+  "random_state": 42,
+  "validation_schemes": [
+    "random_cv",
+    "rolling_cv",
+    "temporal_holdout"
+  ]
+}

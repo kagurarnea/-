@@ -1,0 +1,27 @@
+{
+  "family_size": 11,
+  "resamples": 5000,
+  "hypotheses": [
+    "基础 minus 基础加工序",
+    "基础 minus 基础加时间",
+    "基础 minus 组合",
+    "组合 minus 组合去缺失",
+    "组合 minus 中位数填充",
+    "组合 minus 设备至少5个",
+    "组合 minus 至少5个并收缩",
+    "组合 minus 基础加时间",
+    "组合 minus 八候选选择",
+    "基础加时间 minus 八候选选择",
+    "四候选选择 minus 八候选选择"
+  ],
+  "duplicate_reproductions_excluded": true,
+  "adjustment_scope": "11 distinct reported feature and selection comparisons; not all possible model or research-history tests",
+  "CI_scope": "individual 95 percent group-cluster intervals, not simultaneous confidence intervals",
+  "conditional_on_saved_predictions": true,
+  "adaptive_research_history_corrected": false,
+  "assumptions": [
+    "cluster resampling treats entities as independent; temporal blocks are sensitivity only",
+    "sign-flip requires symmetric group differences"
+  ],
+  "interpretation": "descriptive retrospective evidence, not confirmatory significance or causal process value"
+}

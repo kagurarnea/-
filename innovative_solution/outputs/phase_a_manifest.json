@@ -1,0 +1,49 @@
+{
+  "method": "training_only_expanding_window_seed_ensemble",
+  "training_rows": 800,
+  "test_a_rows": 300,
+  "backtest_folds": [
+    [
+      500,
+      100
+    ],
+    [
+      600,
+      100
+    ],
+    [
+      700,
+      100
+    ]
+  ],
+  "validation_rows": 300,
+  "candidate_half_life_fractions": [
+    null,
+    0.2,
+    0.35,
+    0.5
+  ],
+  "ensemble_members": 3,
+  "selected_strategy": "uniform_xgb",
+  "selected_half_life_fraction": null,
+  "selected_backtest_mse": 0.02506734657276008,
+  "selected_backtest_rmse": 0.1583267083367809,
+  "selected_backtest_mae": 0.11713638787904784,
+  "selected_backtest_r2": 0.3864854323572622,
+  "selected_backtest_bias": -0.014084989604253811,
+  "baseline_external_a_mse": 0.030015997843671684,
+  "selected_external_a_mse": 0.02752459815147832,
+  "selected_external_a_rmse": 0.16590538915743008,
+  "selected_external_a_mae": 0.1344167561974527,
+  "selected_external_a_r2": 0.5017127450730607,
+  "selected_external_a_bias": 0.04990337657519463,
+  "external_a_relative_mse_improvement": 0.08300239442876389,
+  "conformal_radius_90": 0.24264311418214657,
+  "engineered_features_per_member": [
+    790,
+    790,
+    795
+  ],
+  "a_labels_used_for_selection_or_fit": false,
+  "a_labels_used_for_posthoc_evaluation": true
+}

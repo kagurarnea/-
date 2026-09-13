@@ -1,0 +1,2 @@
+﻿alpha,nominal_coverage,empirical_holdout_coverage,interval_radius,mean_interval_width,n_calibration,n_holdout
+0.1,0.9,0.9,0.26113333048008514,0.5222666609601703,320,160

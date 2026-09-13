@@ -1,0 +1,29 @@
+工业AI：交叉验证 + 网格搜索 + 集成学习
+
+固定特征工程：
+缺失值 = operation_tool_mean
+Base = ExtraTrees Top300
+Tool-Z = Top100
+Operation = All
+Tool One-Hot = True
+Tool Target Mean = True
+Tool Target Std = True
+
+最佳单模型 = XGB
+最佳单模型参数 = {'learning_rate': 0.05, 'max_depth': 2, 'min_child_weight': 1, 'n_estimators': 1200}
+最佳单模型 MSE = 0.0119049033
+最佳单模型 RMSE = 0.1091095932
+最佳单模型 MAE = 0.0790126030
+最佳单模型 R2 = 0.729485
+
+最佳集成 = Weighted
+集成权重 = XGB=0.90, RF=0.00, ET=0.10
+集成 MSE = 0.0118620003
+集成 RMSE = 0.1089128107
+集成 MAE = 0.0786532306
+集成 R2 = 0.730460
+
+相对最佳单模型 = 0.36%
+
+输出目录 = C:\Users\lenovo\Downloads\my method\data\preprocess_missing\cv_grid_ensemble
+总耗时 = 16.62分钟

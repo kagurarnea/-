@@ -1,0 +1,26 @@
+[
+  {
+    "file": "submission_A.csv",
+    "rows": 300,
+    "columns": 2,
+    "header": false,
+    "exact_ID_order": true,
+    "finite": true
+  },
+  {
+    "file": "submission_B.csv",
+    "rows": 412,
+    "columns": 2,
+    "header": false,
+    "exact_ID_order": true,
+    "finite": true
+  },
+  {
+    "file": "submission_B_train_only.csv",
+    "rows": 412,
+    "columns": 2,
+    "header": false,
+    "exact_ID_order": true,
+    "finite": true
+  }
+]

@@ -1,0 +1,35 @@
+工业AI二阶段残差校正实验
+
+第一阶段固定方案：
+缺失值 = operation_tool_mean
+ExtraTrees = Top300
+Tool-Z = Top100
+Operation = All
+Tool One-Hot = True
+Tool Target Mean = True
+Tool Target Std = True
+第一阶段模型 = XGBoost
+
+第二阶段：
+Residual Model = XGBoost
+Residual Target = y - Inner OOF Prediction
+
+Lambda结果：
+alpha=0.30 | MSE=0.0117863454 | RMSE=0.1085649363 | MAE=0.0777665575 | R2=0.732179
+alpha=0.20 | MSE=0.0117971322 | RMSE=0.1086146041 | MAE=0.0776964511 | R2=0.731934
+alpha=0.10 | MSE=0.0118552390 | RMSE=0.1088817664 | MAE=0.0777888638 | R2=0.730614
+alpha=0.50 | MSE=0.0119067317 | RMSE=0.1091179715 | MAE=0.0785215714 | R2=0.729444
+alpha=0.00 | MSE=0.0119606659 | RMSE=0.1093648292 | MAE=0.0781100193 | R2=0.728218
+alpha=0.75 | MSE=0.0123233895 | RMSE=0.1110107631 | MAE=0.0805147492 | R2=0.719976
+alpha=1.00 | MSE=0.0130357973 | RMSE=0.1141744161 | MAE=0.0835209501 | R2=0.703788
+
+最佳Alpha=0.30
+Baseline MSE=0.0119606659
+Corrected MSE=0.0117863454
+Relative improvement=1.46%
+
+Residual prediction correlation=0.121004
+
+输出目录：C:\Users\lenovo\Downloads\my method\data\preprocess_missing\residual_correction_experiment
+
+总耗时：4.81分钟

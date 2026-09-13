@@ -1,0 +1,6 @@
+﻿test,statistic,pvalue,interpretation
+Shapiro-Wilk normality,0.8848746187250853,8.264901815417716e-10,p<0.05表示残差显著偏离正态
+D'Agostino normality,95.78898212174255,1.5837506958214651e-21,p<0.05表示残差偏度/峰度显著异常
+Breusch-Pagan heteroscedasticity,0.4830940506661108,0.48702417131240905,p<0.05表示残差方差随预测值变化
+Ljung-Box autocorrelation lag=5,14.801812537405729,0.011243593463885664,p<0.05表示按生产顺序存在残差自相关
+Ljung-Box autocorrelation lag=10,19.434741595515874,0.03507586428296236,p<0.05表示按生产顺序存在残差自相关

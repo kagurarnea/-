@@ -1,0 +1,41 @@
+{
+  "candidate": "process_d3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "medians": {
+    "1": 3.8117761999892537,
+    "100": 3.996863599997596
+  },
+  "measurements": [
+    {
+      "batch_size": 1,
+      "repeat": 1,
+      "seconds": 3.8117761999892537
+    },
+    {
+      "batch_size": 1,
+      "repeat": 2,
+      "seconds": 3.8087436000059824
+    },
+    {
+      "batch_size": 1,
+      "repeat": 3,
+      "seconds": 3.960265599991544
+    },
+    {
+      "batch_size": 100,
+      "repeat": 1,
+      "seconds": 3.985184700009995
+    },
+    {
+      "batch_size": 100,
+      "repeat": 2,
+      "seconds": 4.081570299997111
+    },
+    {
+      "batch_size": 100,
+      "repeat": 3,
+      "seconds": 3.996863599997596
+    }
+  ],
+  "scope": "warm model and input; preprocessing plus three members; excludes I/O and production delays"
+}

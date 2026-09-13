@@ -1,0 +1,74 @@
+工业AI OOF残差分析报告
+
+==================================================
+固定方案
+==================================================
+缺失值 = operation_tool_mean
+特征选择 = ExtraTrees Top300
+模型 = XGBoost
+
+==================================================
+OOF指标
+==================================================
+MSE  = 0.0127935154
+RMSE = 0.1131084231
+MAE  = 0.0807854899
+R2   = 0.709293
+
+==================================================
+Fold结果
+==================================================
+Fold 1: MSE=0.0116584783 | RMSE=0.1079744335 | MAE=0.0789887689 | R2=0.703795
+Fold 2: MSE=0.0094985192 | RMSE=0.0974603470 | MAE=0.0749889312 | R2=0.787847
+Fold 3: MSE=0.0105590089 | RMSE=0.1027570383 | MAE=0.0801919837 | R2=0.762457
+Fold 4: MSE=0.0112732070 | RMSE=0.1061753596 | MAE=0.0814084087 | R2=0.731056
+Fold 5: MSE=0.0209783634 | RMSE=0.1448390949 | MAE=0.0883493570 | R2=0.558180
+
+最差Fold：5
+最差Fold MSE：0.0209783634
+
+==================================================
+Top 10异常样本
+==================================================
+Rank 1 | ID=NH1835 | Tool=O | Y=1.614240 | Pred=2.834806 | Residual=-1.220567 | AbsResidual=1.220567
+Rank 2 | ID=NH1204 | Tool=L | Y=2.357420 | Pred=2.840789 | Residual=-0.483369 | AbsResidual=0.483369
+Rank 3 | ID=NH1856 | Tool=J | Y=2.614328 | Pred=3.043776 | Residual=-0.429448 | AbsResidual=0.429448
+Rank 4 | ID=NH1928 | Tool=J | Y=2.524550 | Pred=2.917617 | Residual=-0.393067 | AbsResidual=0.393067
+Rank 5 | ID=NH1665 | Tool=L | Y=2.498465 | Pred=2.869434 | Residual=-0.370969 | AbsResidual=0.370969
+Rank 6 | ID=NH1321 | Tool=M | Y=2.472397 | Pred=2.795557 | Residual=-0.323160 | AbsResidual=0.323160
+Rank 7 | ID=NH1569 | Tool=J | Y=3.258172 | Pred=2.937083 | Residual=0.321089 | AbsResidual=0.321089
+Rank 8 | ID=NH1231 | Tool=M | Y=2.690453 | Pred=2.998792 | Residual=-0.308339 | AbsResidual=0.308339
+Rank 9 | ID=NH1857 | Tool=J | Y=2.542369 | Pred=2.848600 | Residual=-0.306231 | AbsResidual=0.306231
+Rank 10 | ID=NH1085 | Tool=L | Y=3.180055 | Pred=2.878791 | Residual=0.301264 | AbsResidual=0.301264
+
+==================================================
+最差Tool
+==================================================
+Tool = O
+样本数 = 86
+MSE = 0.0258352096
+RMSE = 0.1607333495
+MAE = 0.0796300033
+平均缺失率 = 0.009131
+平均0值率 = 0.038378
+
+==================================================
+Top 10稳定重要特征
+==================================================
+311X223 | MeanImportance=0.01283691 | Std=0.00123469 | SelectedFolds=5
+311X191 | MeanImportance=0.00826410 | Std=0.00120107 | SelectedFolds=5
+311X32 | MeanImportance=0.00810355 | Std=0.00099369 | SelectedFolds=5
+311X187 | MeanImportance=0.00679230 | Std=0.00056502 | SelectedFolds=5
+311X25 | MeanImportance=0.00629918 | Std=0.00073414 | SelectedFolds=5
+311X129 | MeanImportance=0.00599722 | Std=0.00123876 | SelectedFolds=5
+311X154 | MeanImportance=0.00562202 | Std=0.00148346 | SelectedFolds=5
+311X26 | MeanImportance=0.00544423 | Std=0.00051018 | SelectedFolds=5
+311X205 | MeanImportance=0.00533834 | Std=0.00101257 | SelectedFolds=5
+311X193 | MeanImportance=0.00526849 | Std=0.00074518 | SelectedFolds=5
+
+==================================================
+输出
+==================================================
+C:\Users\lenovo\Downloads\my method\data\preprocess_missing\residual_analysis
+
+总耗时：1.02 分钟

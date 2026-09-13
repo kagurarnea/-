@@ -1,0 +1,43 @@
+{
+  "interpretation": "retrospective_budget_sensitivity_not_exhaustive_ranking",
+  "candidate_views": [
+    "basic",
+    "time_only"
+  ],
+  "trials_per_family": 2,
+  "tree_rounds": 500,
+  "inner_seed": 42,
+  "outer_seeds": [
+    42,
+    143,
+    244
+  ],
+  "parameters": {
+    "Ridge": {
+      "alpha": 100
+    },
+    "RandomForest": {
+      "min_samples_leaf": 2
+    },
+    "GBR": {
+      "max_depth": 2
+    },
+    "SVR": {
+      "C": 1
+    },
+    "LightGBM": {
+      "num_leaves": 7
+    },
+    "CatBoost": {
+      "depth": 4
+    },
+    "XGBoost": {
+      "max_depth": 2
+    }
+  },
+  "same_outer_records": true,
+  "selection": "pooled inner MSE over two feature views; fixed other parameters",
+  "budget_limit": "equal candidates, folds, seeds and tree count; not equal compute, capacity or optimization effort",
+  "categorical_policy": "same one-hot representation; CatBoost native categorical treatment not evaluated",
+  "modern_foundation_models": "not evaluated; no claim of state-of-the-art"
+}

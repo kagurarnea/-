@@ -1,0 +1,28 @@
+工业AI最终预测
+
+训练样本 = 800
+测试样本 = 712
+结构清洗后特征 = 2692
+最终特征数量 = 497
+
+固定方案：
+缺失值 = operation_tool_mean
+ExtraTrees Top = 300
+Tool-Z Top = 100
+Operation = All
+Tool One-Hot = True
+Tool Target Mean = True
+Tool Target Std = True
+XGB learning_rate = 0.05
+XGB max_depth = 2
+XGB n_estimators = 1200
+Residual alpha = 0.3
+
+预测均值 = 2.84630197
+预测标准差 = 0.14319317
+预测最小值 = 2.53758652
+预测最大值 = 3.29187297
+预测中位数 = 2.83522190
+
+提交文件 = C:\Users\lenovo\Downloads\my method\data\preprocess_missing\final_prediction\final_prediction.csv
+总耗时 = 0.58分钟

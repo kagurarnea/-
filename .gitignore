@@ -1,0 +1,29 @@
+# Local Python environments and generated caches
+__pycache__/
+*.py[cod]
+.cache/
+.research_deps/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local credentials and application state
+.env
+.env.*
+!.env.example
+.codex/
+.agents/
+
+# Temporary material and document layout checks
+/tmp/
+**/paper_render/
+**/review_render/
+~$*
+*.tmp
+*.log
+
+# Redundant bundles; their source files are tracked directly
+/innovative_solution.rar
+/innovative_solution/TFT_LCD_源码与结果复现包.zip
